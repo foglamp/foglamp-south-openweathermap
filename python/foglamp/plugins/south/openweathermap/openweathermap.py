@@ -43,7 +43,7 @@ _DEFAULT_CONFIG = {
     'rate': {
         'description': 'Rate at which to fetch weather report in seconds',
         'type': 'integer',
-        'default': '300'
+        'default': '10'
     }
 }
 
