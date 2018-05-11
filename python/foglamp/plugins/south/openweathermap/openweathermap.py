@@ -130,8 +130,10 @@ class WeatherReport(object):
                     asset = 'OpenWeatherMap'
                     timestamp = str(datetime.now(tz=timezone.utc))
                     data = json.loads(res)
-                    readings = {'wind': data['wind'], 'temperature' : data['main']['temp'],
-                                'pressure': data['main']['pressure'], 'visibility': data['visibility']}
+                    readings = {'wind_deg': data['wind']['deg'], 'wind_speed': data['wind']['speed'], 
+                                'temperature' : data['main']['temp'],
+                                'pressure': data['main']['pressure'], 
+                                'visibility': data['visibility']}
                     key = str(uuid.uuid4())
                     await Ingest.add_readings(asset=asset, timestamp=timestamp, key=key, readings=readings)
 

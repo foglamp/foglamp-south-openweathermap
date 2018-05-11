@@ -1,0 +1,1000 @@
+May 11 18:46:15 raspberrypi FogLAMP[3698] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:46:15 raspberrypi FogLAMP[3698] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:46:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 6a28be44-8567-443e-aa25-03455c60d248 pid 3710, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:46:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 719.8924794197083 seconds
+May 11 18:46:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 6a28be44-8567-443e-aa25-03455c60d248 pid 3710 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:46:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:46:32.996834
+May 11 18:46:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.238577842712402 seconds
+May 11 18:46:20 raspberrypi FogLAMP[3698] INFO: sending_process: sending_process_1: Execution completed.
+May 11 18:46:21 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'OMF to PI north' process 'North Readings to PI' task b885da59-2fe4-42f5-8bbb-890aa7e36f98 pid 3697 exit 0, 3 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1']
+May 11 18:46:21 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'OMF to PI north' to start at 2018-05-11 18:46:47.996834
+May 11 18:46:21 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 11.94127106666565 seconds
+May 11 18:46:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 4a3b1372-fbe3-40a6-8039-52f0ac3ab9ad pid 3713, 4 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:46:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 14.931294441223145 seconds
+May 11 18:46:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 4a3b1372-fbe3-40a6-8039-52f0ac3ab9ad pid 3713 exit 0, 3 running tasks#012['tasks/statistics']
+May 11 18:46:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:46:47.996834
+May 11 18:46:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.541039228439331 seconds
+May 11 18:46:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'OMF to PI north' process 'North Readings to PI' task fc91cf9f-ace7-46dd-ab3d-54f2113a4841 pid 3715, 4 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1', '--port=38477', '--address=127.0.0.1', '--name=North Readings to PI']
+May 11 18:46:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 57f6fe05-1b90-4e24-a031-592d29e83146 pid 3717, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:46:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 689.7872204780579 seconds
+May 11 18:46:48 raspberrypi FogLAMP[3716] INFO: sending_process: sending_process_1: sending_process, for Linux (x86_64) Copyright (c) 2017 OSIsoft, LLC
+May 11 18:46:48 raspberrypi FogLAMP[3716] INFO: sending_process: sending_process_1: Started.
+May 11 18:46:49 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:46:49 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:46:49 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:46:49 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:46:49 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:46:50 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 57f6fe05-1b90-4e24-a031-592d29e83146 pid 3717 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:46:50 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:47:02.996834
+May 11 18:46:50 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 12.947682857513428 seconds
+May 11 18:46:54 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:46:54 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:46:54 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:46:54 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:46:54 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:46:59 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:46:59 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:46:59 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:46:59 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:46:59 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 49498140-99f3-4b8d-8b35-c2a5ba5de7d3 pid 3723, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:47:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 674.9218785762787 seconds
+May 11 18:47:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 49498140-99f3-4b8d-8b35-c2a5ba5de7d3 pid 3723 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:47:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:47:17.996834
+May 11 18:47:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.479372501373291 seconds
+May 11 18:47:04 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:04 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:04 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:47:04 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:47:04 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:10 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:10 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:10 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:47:10 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:47:10 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:15 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:15 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:15 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:47:15 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:47:15 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 1e07c925-87eb-4831-ae6d-a70e220f679d pid 3725, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:47:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 659.9215908050537 seconds
+May 11 18:47:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 1e07c925-87eb-4831-ae6d-a70e220f679d pid 3725 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:47:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:47:32.996834
+May 11 18:47:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.17395544052124 seconds
+May 11 18:47:20 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:20 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:20 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:47:20 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:47:20 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:25 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:25 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:25 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:47:25 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:47:25 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:30 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:30 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:30 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:47:30 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:47:30 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 26d3f1cc-666b-41aa-ab03-0a17242947f4 pid 3727, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:47:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 644.939935207367 seconds
+May 11 18:47:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 26d3f1cc-666b-41aa-ab03-0a17242947f4 pid 3727 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:47:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:47:47.996834
+May 11 18:47:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.328168153762817 seconds
+May 11 18:47:35 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:35 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:35 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:47:35 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:47:35 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:40 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:40 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:40 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:47:40 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:47:40 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:45 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:45 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:45 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:47:45 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:47:45 raspberrypi FogLAMP[3716] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:47:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 08ffa9e8-369f-4aac-89c0-c0f4edd97533 pid 3729, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:47:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 629.9350914955139 seconds
+May 11 18:47:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 08ffa9e8-369f-4aac-89c0-c0f4edd97533 pid 3729 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:47:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:48:02.996834
+May 11 18:47:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.537395477294922 seconds
+May 11 18:47:50 raspberrypi FogLAMP[3716] INFO: sending_process: sending_process_1: Execution completed.
+May 11 18:47:50 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'OMF to PI north' process 'North Readings to PI' task fc91cf9f-ace7-46dd-ab3d-54f2113a4841 pid 3715 exit 0, 3 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1']
+May 11 18:47:50 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'OMF to PI north' to start at 2018-05-11 18:48:17.996834
+May 11 18:47:50 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 12.237997770309448 seconds
+May 11 18:48:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 447a38b6-b163-44ff-b0d3-842f03f913cf pid 3731, 4 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:48:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 14.934964656829834 seconds
+May 11 18:48:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 447a38b6-b163-44ff-b0d3-842f03f913cf pid 3731 exit 0, 3 running tasks#012['tasks/statistics']
+May 11 18:48:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:48:17.996834
+May 11 18:48:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.359090328216553 seconds
+May 11 18:48:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'OMF to PI north' process 'North Readings to PI' task 3fb68567-9bee-4850-b055-d2b3916924eb pid 3741, 4 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1', '--port=38477', '--address=127.0.0.1', '--name=North Readings to PI']
+May 11 18:48:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task aaca062f-f4da-45b8-87b8-fb192f4e2078 pid 3743, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:48:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 599.8382606506348 seconds
+May 11 18:48:18 raspberrypi FogLAMP[3742] INFO: sending_process: sending_process_1: sending_process, for Linux (x86_64) Copyright (c) 2017 OSIsoft, LLC
+May 11 18:48:18 raspberrypi FogLAMP[3742] INFO: sending_process: sending_process_1: Started.
+May 11 18:48:19 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:19 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:19 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:48:19 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:48:19 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task aaca062f-f4da-45b8-87b8-fb192f4e2078 pid 3743 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:48:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:48:32.996834
+May 11 18:48:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.431864261627197 seconds
+May 11 18:48:24 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:24 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:24 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:48:24 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:48:24 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:29 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:29 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:29 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:48:29 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:48:29 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 7f14167f-e452-4830-9009-ade74f327cd5 pid 3748, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:48:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 584.9237222671509 seconds
+May 11 18:48:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 7f14167f-e452-4830-9009-ade74f327cd5 pid 3748 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:48:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:48:47.996834
+May 11 18:48:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.456787824630737 seconds
+May 11 18:48:34 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:34 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:34 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:48:34 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:48:34 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:39 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:39 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:39 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:48:39 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:48:39 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:45 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:45 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:45 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:48:45 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:48:45 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 418ceac8-be51-4926-a5d0-0d2123dae6dd pid 3750, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:48:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 569.9406161308289 seconds
+May 11 18:48:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 418ceac8-be51-4926-a5d0-0d2123dae6dd pid 3750 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:48:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:49:02.996834
+May 11 18:48:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.330758333206177 seconds
+May 11 18:48:50 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:50 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:50 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:48:50 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:48:50 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:55 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:55 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:48:55 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:48:55 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:48:55 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:00 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:00 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:00 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:49:00 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:49:00 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task dfea58cf-2d65-4f90-bd99-103418518699 pid 3752, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:49:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 554.9354448318481 seconds
+May 11 18:49:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task dfea58cf-2d65-4f90-bd99-103418518699 pid 3752 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:49:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:49:17.996834
+May 11 18:49:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.49631142616272 seconds
+May 11 18:49:05 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:05 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:05 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:49:05 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:49:05 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:10 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:10 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:10 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:49:10 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:49:10 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:15 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:15 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:15 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:49:15 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:49:15 raspberrypi FogLAMP[3742] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 5562913d-b0bc-4623-a954-20347064f815 pid 3754, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:49:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 539.956315279007 seconds
+May 11 18:49:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 5562913d-b0bc-4623-a954-20347064f815 pid 3754 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:49:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:49:32.996834
+May 11 18:49:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.225700616836548 seconds
+May 11 18:49:20 raspberrypi FogLAMP[3742] INFO: sending_process: sending_process_1: Execution completed.
+May 11 18:49:20 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'OMF to PI north' process 'North Readings to PI' task 3fb68567-9bee-4850-b055-d2b3916924eb pid 3741 exit 0, 3 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1']
+May 11 18:49:20 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'OMF to PI north' to start at 2018-05-11 18:49:47.996834
+May 11 18:49:20 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 12.01450777053833 seconds
+May 11 18:49:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task e9e4a331-0f5b-4504-944d-43edbc5ae2e6 pid 3756, 4 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:49:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 14.910497665405273 seconds
+May 11 18:49:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task e9e4a331-0f5b-4504-944d-43edbc5ae2e6 pid 3756 exit 0, 3 running tasks#012['tasks/statistics']
+May 11 18:49:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:49:47.996834
+May 11 18:49:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.259117126464844 seconds
+May 11 18:49:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'OMF to PI north' process 'North Readings to PI' task ec4bc5a0-c746-4a21-b7cd-d324c4c5704f pid 3758, 4 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1', '--port=38477', '--address=127.0.0.1', '--name=North Readings to PI']
+May 11 18:49:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task bf0f25dc-856c-43a1-b3bf-e8a328836935 pid 3760, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:49:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 509.86214113235474 seconds
+May 11 18:49:48 raspberrypi FogLAMP[3759] INFO: sending_process: sending_process_1: sending_process, for Linux (x86_64) Copyright (c) 2017 OSIsoft, LLC
+May 11 18:49:48 raspberrypi FogLAMP[3759] INFO: sending_process: sending_process_1: Started.
+May 11 18:49:49 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:49 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:49 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:49:49 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:49:49 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task bf0f25dc-856c-43a1-b3bf-e8a328836935 pid 3760 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:49:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:50:02.996834
+May 11 18:49:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.343483924865723 seconds
+May 11 18:49:54 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:54 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:54 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:49:54 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:49:54 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:59 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:59 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:49:59 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:49:59 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:49:59 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task d66e4a79-7060-4a94-9dce-0b939690325d pid 3765, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:50:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 494.93071031570435 seconds
+May 11 18:50:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task d66e4a79-7060-4a94-9dce-0b939690325d pid 3765 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:50:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:50:17.996834
+May 11 18:50:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.578454494476318 seconds
+May 11 18:50:04 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:04 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:04 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:50:04 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:50:04 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:10 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:10 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:10 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:50:10 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:50:10 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:15 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:15 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:15 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:50:15 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:50:15 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 69a30f2a-f1e8-49a2-b9ec-3b1b6686d355 pid 3768, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:50:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 479.93377137184143 seconds
+May 11 18:50:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 69a30f2a-f1e8-49a2-b9ec-3b1b6686d355 pid 3768 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:50:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:50:32.996834
+May 11 18:50:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.327651739120483 seconds
+May 11 18:50:20 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:20 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:20 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:50:20 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:50:20 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:25 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:25 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:25 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:50:25 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:50:25 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:30 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:30 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:30 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:50:30 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:50:30 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task f891e9d5-c87c-4fb5-a368-a54ff51de7f4 pid 3770, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:50:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 464.893346786499 seconds
+May 11 18:50:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task f891e9d5-c87c-4fb5-a368-a54ff51de7f4 pid 3770 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:50:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:50:47.996834
+May 11 18:50:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.261157035827637 seconds
+May 11 18:50:35 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:35 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:35 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:50:35 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:50:35 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:40 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:40 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:40 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:50:40 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:50:40 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:45 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:45 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:45 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:50:45 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:50:45 raspberrypi FogLAMP[3759] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:50:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task f83e468c-45a6-459c-8266-ab19317dc271 pid 3772, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:50:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 449.9393787384033 seconds
+May 11 18:50:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task f83e468c-45a6-459c-8266-ab19317dc271 pid 3772 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:50:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:51:02.996834
+May 11 18:50:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.456905126571655 seconds
+May 11 18:50:50 raspberrypi FogLAMP[3759] INFO: sending_process: sending_process_1: Execution completed.
+May 11 18:50:51 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'OMF to PI north' process 'North Readings to PI' task ec4bc5a0-c746-4a21-b7cd-d324c4c5704f pid 3758 exit 0, 3 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1']
+May 11 18:50:51 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'OMF to PI north' to start at 2018-05-11 18:51:17.996834
+May 11 18:50:51 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 11.88014531135559 seconds
+May 11 18:51:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 9a057eed-ea96-4cd1-9e8d-75948bf87e9d pid 3774, 4 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:51:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 14.941607475280762 seconds
+May 11 18:51:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 9a057eed-ea96-4cd1-9e8d-75948bf87e9d pid 3774 exit 0, 3 running tasks#012['tasks/statistics']
+May 11 18:51:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:51:17.996834
+May 11 18:51:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.392551898956299 seconds
+May 11 18:51:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'OMF to PI north' process 'North Readings to PI' task bf4cfecf-ebe5-4b4f-b898-9a6723bf09b4 pid 3776, 4 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1', '--port=38477', '--address=127.0.0.1', '--name=North Readings to PI']
+May 11 18:51:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 433d32e0-d319-4de9-b636-b75bca61ffa4 pid 3778, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:51:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 419.86802220344543 seconds
+May 11 18:51:18 raspberrypi FogLAMP[3777] INFO: sending_process: sending_process_1: sending_process, for Linux (x86_64) Copyright (c) 2017 OSIsoft, LLC
+May 11 18:51:18 raspberrypi FogLAMP[3777] INFO: sending_process: sending_process_1: Started.
+May 11 18:51:19 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:19 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:19 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:51:19 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:51:19 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 433d32e0-d319-4de9-b636-b75bca61ffa4 pid 3778 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:51:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:51:32.996834
+May 11 18:51:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.394511222839355 seconds
+May 11 18:51:24 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:24 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:24 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:51:24 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:51:24 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:29 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:29 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:29 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:51:29 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:51:29 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task f3261676-eaf3-4846-910a-db794e2320d0 pid 3783, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:51:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 404.85288071632385 seconds
+May 11 18:51:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task f3261676-eaf3-4846-910a-db794e2320d0 pid 3783 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:51:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:51:47.996834
+May 11 18:51:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.32737946510315 seconds
+May 11 18:51:34 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:34 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:34 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:51:34 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:51:34 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:39 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:39 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:39 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:51:39 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:51:39 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:45 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:45 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:45 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:51:45 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:51:45 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 5c8d8139-4041-41d0-b3e3-b93dbef9dbd4 pid 3785, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:51:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 389.9353642463684 seconds
+May 11 18:51:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 5c8d8139-4041-41d0-b3e3-b93dbef9dbd4 pid 3785 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:51:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:52:02.996834
+May 11 18:51:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.552477598190308 seconds
+May 11 18:51:50 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:50 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:50 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:51:50 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:51:50 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:55 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:55 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:51:55 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:51:55 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:51:55 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:00 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:00 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:00 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:52:00 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:52:00 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 4ae4df99-e5de-4bd5-8535-18fe36e2d906 pid 3789, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:52:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 374.9341175556183 seconds
+May 11 18:52:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 4ae4df99-e5de-4bd5-8535-18fe36e2d906 pid 3789 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:52:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:52:17.996834
+May 11 18:52:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.29570746421814 seconds
+May 11 18:52:05 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:05 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:05 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:52:05 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:52:05 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:10 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:10 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:10 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:52:10 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:52:10 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:15 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:52:15 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:15 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:15 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:52:15 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:52:15 raspberrypi FogLAMP[3777] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:16 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:52:16 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:52:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 290e24ce-61e1-413f-aa42-6616b6c4e8f2 pid 3800, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:52:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 359.93420028686523 seconds
+May 11 18:52:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 290e24ce-61e1-413f-aa42-6616b6c4e8f2 pid 3800 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:52:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:52:32.996834
+May 11 18:52:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.548370361328125 seconds
+May 11 18:52:20 raspberrypi FogLAMP[3777] INFO: sending_process: sending_process_1: Execution completed.
+May 11 18:52:20 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'OMF to PI north' process 'North Readings to PI' task bf4cfecf-ebe5-4b4f-b898-9a6723bf09b4 pid 3776 exit 0, 3 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1']
+May 11 18:52:20 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'OMF to PI north' to start at 2018-05-11 18:52:47.996834
+May 11 18:52:20 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 12.04343318939209 seconds
+May 11 18:52:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task a1d71628-5d73-4c51-a39a-f424a420c5f5 pid 3820, 4 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:52:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 14.930989980697632 seconds
+May 11 18:52:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task a1d71628-5d73-4c51-a39a-f424a420c5f5 pid 3820 exit 0, 3 running tasks#012['tasks/statistics']
+May 11 18:52:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:52:47.996834
+May 11 18:52:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.144457817077637 seconds
+May 11 18:52:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'OMF to PI north' process 'North Readings to PI' task c89c5de9-0404-493b-bee8-7e3f654de70f pid 3822, 4 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1', '--port=38477', '--address=127.0.0.1', '--name=North Readings to PI']
+May 11 18:52:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 3b09798f-e977-455c-bd34-23dcde9bf03a pid 3824, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:52:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 329.87954020500183 seconds
+May 11 18:52:48 raspberrypi FogLAMP[3823] INFO: sending_process: sending_process_1: sending_process, for Linux (x86_64) Copyright (c) 2017 OSIsoft, LLC
+May 11 18:52:48 raspberrypi FogLAMP[3823] INFO: sending_process: sending_process_1: Started.
+May 11 18:52:49 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:49 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:49 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:52:49 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:52:49 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 3b09798f-e977-455c-bd34-23dcde9bf03a pid 3824 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:52:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:53:02.996834
+May 11 18:52:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.275166511535645 seconds
+May 11 18:52:54 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:54 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:54 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:52:54 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:52:54 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:59 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:59 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:52:59 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:52:59 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:52:59 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 0b6c965a-ded8-46c3-900a-b10ec2ef21a2 pid 3829, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:53:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 314.9456744194031 seconds
+May 11 18:53:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 0b6c965a-ded8-46c3-900a-b10ec2ef21a2 pid 3829 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:53:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:53:17.996834
+May 11 18:53:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.534712314605713 seconds
+May 11 18:53:04 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:04 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:04 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:53:04 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:53:04 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:10 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:10 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:10 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:53:10 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:53:10 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:15 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:15 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:15 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:53:15 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:53:15 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 7657c429-5479-47ec-a657-366abcdd5e12 pid 3835, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:53:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 299.8977596759796 seconds
+May 11 18:53:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 7657c429-5479-47ec-a657-366abcdd5e12 pid 3835 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:53:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:53:32.996834
+May 11 18:53:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.337562084197998 seconds
+May 11 18:53:20 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:20 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:20 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:53:20 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:53:20 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:20 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/asset/OpenWeatherMap
+May 11 18:53:25 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:25 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:25 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:53:25 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:53:25 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:30 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:30 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:30 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:53:30 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:53:30 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 2a5575f2-578c-49fe-aa7f-7ba4eb4c4b72 pid 3840, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:53:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 284.95118474960327 seconds
+May 11 18:53:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 2a5575f2-578c-49fe-aa7f-7ba4eb4c4b72 pid 3840 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:53:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:53:47.996834
+May 11 18:53:34 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.57630705833435 seconds
+May 11 18:53:35 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:35 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:35 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:53:35 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:53:35 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:40 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:40 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:40 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:53:40 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:53:40 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:45 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:45 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:45 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:53:45 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:53:45 raspberrypi FogLAMP[3823] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:53:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 80e1a5ac-1f4c-437a-ac26-76cb3d90bc7c pid 3842, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:53:48 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 269.932710647583 seconds
+May 11 18:53:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 80e1a5ac-1f4c-437a-ac26-76cb3d90bc7c pid 3842 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:53:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:54:02.996834
+May 11 18:53:49 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.37436842918396 seconds
+May 11 18:53:50 raspberrypi FogLAMP[3823] INFO: sending_process: sending_process_1: Execution completed.
+May 11 18:53:51 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'OMF to PI north' process 'North Readings to PI' task c89c5de9-0404-493b-bee8-7e3f654de70f pid 3822 exit 0, 3 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1']
+May 11 18:53:51 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'OMF to PI north' to start at 2018-05-11 18:54:17.996834
+May 11 18:53:51 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 11.818087577819824 seconds
+May 11 18:54:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 47d16885-88db-4ea7-aa8a-8b1790c23455 pid 3844, 4 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:54:03 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 14.888949871063232 seconds
+May 11 18:54:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 47d16885-88db-4ea7-aa8a-8b1790c23455 pid 3844 exit 0, 3 running tasks#012['tasks/statistics']
+May 11 18:54:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:54:17.996834
+May 11 18:54:04 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.323034286499023 seconds
+May 11 18:54:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'OMF to PI north' process 'North Readings to PI' task c435e2f9-a3d8-4746-b77c-ff1f1bb21fbd pid 3846, 4 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1', '--port=38477', '--address=127.0.0.1', '--name=North Readings to PI']
+May 11 18:54:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 6ada01ab-b3f1-4431-b0ea-188e20560a1c pid 3848, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:54:18 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 239.85908937454224 seconds
+May 11 18:54:18 raspberrypi FogLAMP[3847] INFO: sending_process: sending_process_1: sending_process, for Linux (x86_64) Copyright (c) 2017 OSIsoft, LLC
+May 11 18:54:18 raspberrypi FogLAMP[3847] INFO: sending_process: sending_process_1: Started.
+May 11 18:54:19 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:54:19 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:54:19 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:54:19 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:54:19 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:54:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 6ada01ab-b3f1-4431-b0ea-188e20560a1c pid 3848 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 18:54:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:54:32.996834
+May 11 18:54:19 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.29920768737793 seconds
+May 11 18:54:24 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:54:24 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:54:24 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:54:24 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:54:24 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:54:29 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: unable to convert in memory data structure related to the statistics data - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:54:29 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:54:29 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: cannot load data into memory - error details |{0}|
+May 11 18:54:29 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: cannot complete the sending operation of a block of data.
+May 11 18:54:29 raspberrypi FogLAMP[3847] ERROR: sending_process: sending_process_1: cannot complete the sending operation - error details |float() argument must be a string or a number, not 'dict'|
+May 11 18:54:31 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:54:31 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received PUT request for /foglamp/shutdown
+May 11 18:54:32 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:54:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task a1e11e56-e8e6-4380-b911-097b81239fc1 pid 3888, 5 running tasks#012['tasks/statistics', '--port=38477', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:54:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 224.95938372612 seconds
+May 11 18:54:33 raspberrypi FogLAMP[2718] INFO: common: foglamp.services.core.api.common: Executing controlled shutdown
+May 11 18:54:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Processing stop request
+May 11 18:54:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Stopping process: Schedule 'OMF to PI north' process 'North Readings to PI' task c435e2f9-a3d8-4746-b77c-ff1f1bb21fbd pid 3846#012['tasks/north', '--stream_id', '1', '--debug_level', '1']
+May 11 18:54:33 raspberrypi FogLAMP[3847] INFO: sending_process: sending_process_1: _signal_handler - signal captured |15|
+May 11 18:54:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Stopping process: Schedule 'stats collection' process 'stats collector' task a1e11e56-e8e6-4380-b911-097b81239fc1 pid 3888#012['tasks/statistics']
+May 11 18:54:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'OMF to PI north' process 'North Readings to PI' task c435e2f9-a3d8-4746-b77c-ff1f1bb21fbd pid 3846 exit -15, 4 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1']
+May 11 18:54:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Tasks will no longer execute for schedule 'OMF to PI north'
+May 11 18:54:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task a1e11e56-e8e6-4380-b911-097b81239fc1 pid 3888 exit -15, 3 running tasks#012['tasks/statistics']
+May 11 18:54:33 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Tasks will no longer execute for schedule 'stats collection'
+May 11 18:54:34 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:54:34 raspberrypi FogLAMP[3847] INFO: sending_process: sending_process_1: send_data - signal received, stops the execution
+May 11 18:54:34 raspberrypi FogLAMP[3847] INFO: sending_process: sending_process_1: Execution completed.
+May 11 18:54:35 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:54:36 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:54:37 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:54:38 raspberrypi FogLAMP[2718] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Stopped
+May 11 18:54:38 raspberrypi FogLAMP[2718] INFO: server: foglamp.services.core.server: Shutting down the Southbound service COAP ...
+May 11 18:54:38 raspberrypi FogLAMP[2718] INFO: server: foglamp.services.core.server: Shutting down the Southbound service HTTP_SOUTH ...
+May 11 18:54:38 raspberrypi FogLAMP[2718] INFO: server: foglamp.services.core.server: Shutting down the Southbound service openweathermap ...
+May 11 18:54:38 raspberrypi FogLAMP[2779] INFO: coap_listen: foglamp.plugins.south.coap_listen.coap_listen: Stopping South COAP plugin...
+May 11 18:54:38 raspberrypi FogLAMP[2779] INFO: coap_listen: foglamp.plugins.south.coap_listen.coap_listen: COAP plugin shut down.
+May 11 18:54:38 raspberrypi FogLAMP[2777] INFO: http_south: foglamp.plugins.south.http_south.http_south: Stopping South HTTP plugin.
+May 11 18:54:38 raspberrypi FogLAMP[2777] INFO: http_south: foglamp.plugins.south.http_south.http_south: South HTTP plugin shut down.
+May 11 18:54:39 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:54:40 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:54:41 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:54:43 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:54:48 raspberrypi FogLAMP[2718] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Stopped service instance id=280cb226-fc5f-4468-af5f-b12e47222d71: <COAP, type=Southbound, protocol=http, address=127.0.0.1, service port=39307, management port=39307, status=2>
+May 11 18:54:50 raspberrypi FogLAMP[2718] INFO: server: foglamp.services.core.server: Successfully shut down the Southbound service COAP.
+May 11 18:54:55 raspberrypi FogLAMP[2718] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Stopped service instance id=838a6b5c-6332-4242-864c-28993ff0d4b6: <openweathermap, type=Southbound, protocol=http, address=127.0.0.1, service port=44375, management port=44375, status=2>
+May 11 18:55:00 raspberrypi FogLAMP[2718] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Stopped service instance id=f14975e7-91ff-4d1f-bbcc-db3953f42f8b: <HTTP_SOUTH, type=Southbound, protocol=http, address=127.0.0.1, service port=38809, management port=38809, status=2>
+May 11 18:55:00 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:55:01 raspberrypi CRON[3965]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+May 11 18:55:03 raspberrypi FogLAMP[2718] INFO: server: foglamp.services.core.server: Successfully shut down the Southbound service openweathermap.
+May 11 18:55:03 raspberrypi FogLAMP[2718] INFO: server: foglamp.services.core.server: Successfully shut down the Southbound service HTTP_SOUTH.
+May 11 18:55:03 raspberrypi FogLAMP[2718] INFO: server: foglamp.services.core.server: Services monitoring stopped.
+May 11 18:55:03 raspberrypi FogLAMP[2718] INFO: server: foglamp.services.core.server: Rest server stopped.
+May 11 18:55:03 raspberrypi FogLAMP[2718] INFO: server: foglamp.services.core.server: Shutting down the Storage service FogLAMP Storage ...
+May 11 18:55:03 raspberrypi FogLAMP[2718] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:55:04 raspberrypi FogLAMP Storage[2737]: Storage service shutdown in progress.
+May 11 18:55:04 raspberrypi FogLAMP[2718] INFO: server: foglamp.services.core.server: Successfully shut down the Storage service FogLAMP Storage.
+May 11 18:55:04 raspberrypi FogLAMP[2718] INFO: server: foglamp.services.core.server: FogLAMP PID file [/usr/local/foglamp/data/var/run/foglamp.core.pid] removed.
+May 11 18:55:04 raspberrypi FogLAMP[2718] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Stopped service instance id=cb2485ef-db3c-4eeb-8f53-5f9ae19dd0ef: <FogLAMP Storage, type=Storage, protocol=http, address=localhost, service port=37895, management port=39611, status=2>
+May 11 18:55:04 raspberrypi FogLAMP Storage[2737]: Unregister service failed Protocol error.
+May 11 18:55:04 raspberrypi FogLAMP Storage[2737]: Storage service shut down.
+May 11 18:55:06 raspberrypi FogLAMP[2718] INFO: server: foglamp.services.core.server: Stopping the FogLAMP Core event loop. Good Bye!
+May 11 18:55:07 raspberrypi FogLAMP [3856] INFO: script.foglamp: FogLAMP stopped.
+May 11 18:55:14 raspberrypi FogLAMP Storage[3994] INFO: script.plugin.storage.sqlite: Building the metadata for the FogLAMP Plugin 'sqlite' ...
+May 11 18:55:18 raspberrypi FogLAMP Storage[3994] INFO: script.plugin.storage.sqlite: Build complete for FogLAMP Plugin 'sqlite in database '/usr/local/foglamp/data/foglamp.db'.
+May 11 18:55:31 raspberrypi systemd[1]: Stopping LSB: FogLAMP...
+May 11 18:55:31 raspberrypi foglamp[4043]: FogLAMP not running
+May 11 18:55:31 raspberrypi systemd[1]: Stopped LSB: FogLAMP.
+May 11 18:55:31 raspberrypi systemd[1]: Starting LSB: FogLAMP...
+May 11 18:55:31 raspberrypi FogLAMP Storage[4093] INFO: script.plugin.storage.sqlite: SQLite 3 database '/usr/local/foglamp/data/foglamp.db' ready.
+May 11 18:55:31 raspberrypi FogLAMP Storage[4066] INFO: script.plugin.storage.sqlite: SQLite3 database is ready.
+May 11 18:55:32 raspberrypi FogLAMP Storage[4066] INFO: script.plugin.storage.sqlite: FogLAMP DB version not found in foglamp.'version', setting version [1]
+May 11 18:55:34 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: start core
+May 11 18:55:34 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: Management API started on http://0.0.0.0:35451
+May 11 18:55:34 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: start storage, from directory /usr/local/foglamp/scripts
+May 11 18:55:34 raspberrypi FogLAMP Storage[4131]: Load storage plugin sqlite.
+May 11 18:55:34 raspberrypi FogLAMP Storage[4131]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 18:55:34 raspberrypi FogLAMP Storage[4131]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 18:55:34 raspberrypi FogLAMP Storage[4131]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 18:55:34 raspberrypi FogLAMP Storage[4131]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 18:55:34 raspberrypi FogLAMP Storage[4131]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 18:55:34 raspberrypi FogLAMP Storage[4131]: Loaded storage plugin sqlite.
+May 11 18:55:34 raspberrypi FogLAMP Storage[4131]: Starting management api on port 0.
+May 11 18:55:34 raspberrypi FogLAMP Storage[4131]: Starting service...
+May 11 18:55:35 raspberrypi FogLAMP[4112] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Registered service instance id=df3aa8ab-ee91-4595-98fd-f9818cf4e0c5: <FogLAMP Storage, type=Storage, protocol=http, address=localhost, service port=46267, management port=42461, status=1>
+May 11 18:55:35 raspberrypi FogLAMP Storage[4131]: Registered service df3aa8ab-ee91-4595-98fd-f9818cf4e0c5.
+May 11 18:55:35 raspberrypi FogLAMP Storage[4131]: Failed to register configuration category: {"error": {"message": "[AttributeError] 'NoneType' object has no attribute 'register'"}}.
+May 11 18:55:37 raspberrypi FogLAMP Storage[4131]: Failed to register configuration category: {"error": {"message": "[AttributeError] 'NoneType' object has no attribute 'register'"}}.
+May 11 18:55:39 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: start scheduler
+May 11 18:55:39 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Starting
+May 11 18:55:39 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Starting Scheduler: Management port received is 35451
+May 11 18:55:39 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'purge' to start at 2018-05-11 19:55:39.822317
+May 11 18:55:39 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:55:54.822317
+May 11 18:55:39 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'certificate checker' to start at 2018-05-11 19:05:00
+May 11 18:55:39 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'HTTP listener south' to start at 2018-05-11 18:55:39.822317
+May 11 18:55:39 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'COAP listener south' to start at 2018-05-11 18:55:39.822317
+May 11 18:55:40 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: Services monitoring started ...
+May 11 18:55:40 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'HTTP listener south' process 'HTTP_SOUTH' task 7f84788a-9846-424d-8471-2e4710c712eb pid 4178, 1 running tasks#012['services/south', '--port=35451', '--address=127.0.0.1', '--name=HTTP_SOUTH']
+May 11 18:55:40 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'COAP listener south' process 'COAP' task 4b4bad03-21d1-43c3-ba80-a1bc9c1f377e pid 4180, 2 running tasks#012['services/south', '--port=35451', '--address=127.0.0.1', '--name=COAP']
+May 11 18:55:40 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 14.668470621109009 seconds
+May 11 18:55:40 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: Announce management API service
+May 11 18:55:40 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: PID [4112] written in [/usr/local/foglamp/data/var/run/foglamp.core.pid]
+May 11 18:55:40 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: REST API Server started on http://0.0.0.0:8081
+May 11 18:55:40 raspberrypi FogLAMP[4112] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Registered service instance id=11c3aad0-98c1-4213-906f-5e40a41ff8e3: <FogLAMP Core, type=Core, protocol=http, address=0.0.0.0, service port=8081, management port=35451, status=1>
+May 11 18:55:40 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:55:41 raspberrypi FogLAMP [4066] INFO: script.foglamp: FogLAMP started.
+May 11 18:55:41 raspberrypi foglamp[4054]: FogLAMP started.
+May 11 18:55:41 raspberrypi foglamp[4054]: FogLAMP started [4112]
+May 11 18:55:41 raspberrypi systemd[1]: Started LSB: FogLAMP.
+May 11 18:55:41 raspberrypi FogLAMP Storage[4131]: Registered configuration category STORAGE, registration id 86d6197c-78c3-49c5-b967-c143c6a261df.
+May 11 18:55:42 raspberrypi FogLAMP[4112] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Registered service instance id=28aecd8d-8d24-4f2d-9bba-c4a43c4b8804: <HTTP_SOUTH, type=Southbound, protocol=http, address=127.0.0.1, service port=46609, management port=46609, status=1>
+May 11 18:55:42 raspberrypi FogLAMP[4112] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Registered service instance id=68109b95-4076-4425-8775-7e3e593bc956: <COAP, type=Southbound, protocol=http, address=127.0.0.1, service port=44843, management port=44843, status=1>
+May 11 18:55:43 raspberrypi FogLAMP[4181] INFO: coap_listen: foglamp.plugins.south.coap_listen.coap_listen: CoAP listener started on port 5683 with uri sensor-values
+May 11 18:55:54 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task e084d8ee-ccbe-4de6-bd02-03a9450e5e7f pid 4205, 3 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:55:54 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 545.0459446907043 seconds
+May 11 18:55:56 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task e084d8ee-ccbe-4de6-bd02-03a9450e5e7f pid 4205 exit 0, 2 running tasks#012['tasks/statistics']
+May 11 18:55:56 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:56:09.822317
+May 11 18:55:56 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.408133506774902 seconds
+May 11 18:56:09 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task e3c94c56-f907-4737-8ed4-0e56479d31f0 pid 4210, 3 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:56:09 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 530.1029670238495 seconds
+May 11 18:56:11 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task e3c94c56-f907-4737-8ed4-0e56479d31f0 pid 4210 exit 0, 2 running tasks#012['tasks/statistics']
+May 11 18:56:11 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:56:24.822317
+May 11 18:56:11 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.619409561157227 seconds
+May 11 18:56:24 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 1e5f734a-44e6-4e61-8278-fb81fbfe20ab pid 4218, 3 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:56:24 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 515.1115202903748 seconds
+May 11 18:56:26 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 1e5f734a-44e6-4e61-8278-fb81fbfe20ab pid 4218 exit 0, 2 running tasks#012['tasks/statistics']
+May 11 18:56:26 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:56:39.822317
+May 11 18:56:26 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.633757829666138 seconds
+May 11 18:56:39 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task bfd286a1-9e5d-451a-adf8-f135251cef29 pid 4223, 3 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:56:39 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 500.07281732559204 seconds
+May 11 18:56:41 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task bfd286a1-9e5d-451a-adf8-f135251cef29 pid 4223 exit 0, 2 running tasks#012['tasks/statistics']
+May 11 18:56:41 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:56:54.822317
+May 11 18:56:41 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.487376689910889 seconds
+May 11 18:56:54 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 90cb7d58-e103-48ff-904d-4bc825c92e06 pid 4228, 3 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:56:54 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 485.1177022457123 seconds
+May 11 18:56:56 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 90cb7d58-e103-48ff-904d-4bc825c92e06 pid 4228 exit 0, 2 running tasks#012['tasks/statistics']
+May 11 18:56:56 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:57:09.822317
+May 11 18:56:56 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.541171073913574 seconds
+May 11 18:57:09 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task a32c3f11-3a86-4174-a188-cce7a5852709 pid 4241, 3 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:57:09 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 470.11249351501465 seconds
+May 11 18:57:11 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task a32c3f11-3a86-4174-a188-cce7a5852709 pid 4241 exit 0, 2 running tasks#012['tasks/statistics']
+May 11 18:57:11 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:57:24.822317
+May 11 18:57:11 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.662868976593018 seconds
+May 11 18:57:24 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 8c45ce24-0d0e-444a-8adf-6704ebecd03d pid 4245, 3 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:57:24 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 455.1061794757843 seconds
+May 11 18:57:26 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 8c45ce24-0d0e-444a-8adf-6704ebecd03d pid 4245 exit 0, 2 running tasks#012['tasks/statistics']
+May 11 18:57:26 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:57:39.822317
+May 11 18:57:26 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.673546075820923 seconds
+May 11 18:57:39 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 6f840efd-40d4-4b3c-97e1-7e952152f36e pid 4247, 3 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:57:39 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 440.1173005104065 seconds
+May 11 18:57:41 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 6f840efd-40d4-4b3c-97e1-7e952152f36e pid 4247 exit 0, 2 running tasks#012['tasks/statistics']
+May 11 18:57:41 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:57:54.822317
+May 11 18:57:41 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.448945999145508 seconds
+May 11 18:57:54 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task bc491275-1830-407e-8a4d-7780057fe916 pid 4251, 3 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:57:54 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 425.0783591270447 seconds
+May 11 18:57:56 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task bc491275-1830-407e-8a4d-7780057fe916 pid 4251 exit 0, 2 running tasks#012['tasks/statistics']
+May 11 18:57:56 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:58:09.822317
+May 11 18:57:56 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.651470184326172 seconds
+May 11 18:58:09 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 37ebe139-d3b3-4316-b722-fbc574776241 pid 4253, 3 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:58:09 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 410.1133801937103 seconds
+May 11 18:58:11 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 37ebe139-d3b3-4316-b722-fbc574776241 pid 4253 exit 0, 2 running tasks#012['tasks/statistics']
+May 11 18:58:11 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:58:24.822317
+May 11 18:58:11 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.663335084915161 seconds
+May 11 18:58:24 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task e7d1d2e6-45cc-4fbe-ba07-eb7b0853750c pid 4255, 3 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:58:24 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 395.11167907714844 seconds
+May 11 18:58:26 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task e7d1d2e6-45cc-4fbe-ba07-eb7b0853750c pid 4255 exit 0, 2 running tasks#012['tasks/statistics']
+May 11 18:58:26 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:58:39.822317
+May 11 18:58:26 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.322100162506104 seconds
+May 11 18:58:39 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 3e0a7f53-3e6e-4f4f-9301-9114d4930534 pid 4260, 3 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:58:39 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 380.10634112358093 seconds
+May 11 18:58:41 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 3e0a7f53-3e6e-4f4f-9301-9114d4930534 pid 4260 exit 0, 2 running tasks#012['tasks/statistics']
+May 11 18:58:41 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:58:54.822317
+May 11 18:58:41 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.510143041610718 seconds
+May 11 18:58:47 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:58:48 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received POST request for /foglamp/service
+May 11 18:58:48 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received PUT request for /foglamp/schedule/87f87757-33e9-44ed-a9e7-f94583230549
+May 11 18:58:54 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 156ae103-6b7e-4f91-a1c4-4b12006e846f pid 4380, 3 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:58:55 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 364.95319414138794 seconds
+May 11 18:58:56 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received PUT request for /foglamp/category/SEND_PR_1/producerToken
+May 11 18:58:56 raspberrypi FogLAMP[4112] ERROR: configuration_manager: foglamp.common.configuration_manager: Unable to set item value entry based on category_name SEND_PR_1 and item_name producerToken and value_item_entry uid=0a5c48cd-9cd8-4ef6-b7dc-ea8b6e38907e&crt=20180501225727392&sig=cAWrsb4zPC5f9sXJse6Qs30GujB3zt+WRilXKRtTw8U=#012Traceback (most recent call last):#012  File "/usr/local/foglamp/python/foglamp/common/configuration_manager.py", line 331, in set_category_item_value_entry#012    .format(category_name, item_name))#012ValueError: No detail found for the category_name: SEND_PR_1 and item_name: producerToken
+May 11 18:58:56 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 156ae103-6b7e-4f91-a1c4-4b12006e846f pid 4380 exit 0, 2 running tasks#012['tasks/statistics']
+May 11 18:58:56 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:59:09.822317
+May 11 18:58:56 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.319261312484741 seconds
+May 11 18:59:04 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received PUT request for /foglamp/schedule/2b614d26-760f-11e7-b5a5-be2e44b06b34
+May 11 18:59:04 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'OMF to PI north' to start at 2018-05-11 18:59:09.822317
+May 11 18:59:04 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 5.037842750549316 seconds
+May 11 18:59:09 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'OMF to PI north' process 'North Readings to PI' task 06d2841a-14c2-4a11-98b4-c477ef61585f pid 4389, 3 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1', '--port=35451', '--address=127.0.0.1', '--name=North Readings to PI']
+May 11 18:59:09 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task eb1a5a67-d7d8-469a-b7b1-6aa8835aa4ba pid 4391, 4 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:59:09 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 350.0336537361145 seconds
+May 11 18:59:10 raspberrypi FogLAMP[4390] INFO: sending_process: sending_process_1: sending_process, for Linux (x86_64) Copyright (c) 2017 OSIsoft, LLC
+May 11 18:59:10 raspberrypi FogLAMP[4390] INFO: sending_process: sending_process_1: Started.
+May 11 18:59:11 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task eb1a5a67-d7d8-469a-b7b1-6aa8835aa4ba pid 4391 exit 0, 3 running tasks#012['tasks/statistics']
+May 11 18:59:11 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:59:24.822317
+May 11 18:59:11 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.188175678253174 seconds
+May 11 18:59:16 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received PUT request for /foglamp/category/SEND_PR_1/producerToken
+May 11 18:59:24 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task b4486ccf-b64b-4f19-9050-8f0ec3da8ca4 pid 4401, 4 running tasks#012['tasks/statistics', '--port=35451', '--address=127.0.0.1', '--name=stats collector']
+May 11 18:59:24 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 335.09646821022034 seconds
+May 11 18:59:26 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task b4486ccf-b64b-4f19-9050-8f0ec3da8ca4 pid 4401 exit 0, 3 running tasks#012['tasks/statistics']
+May 11 18:59:26 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 18:59:39.822317
+May 11 18:59:26 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.585687160491943 seconds
+May 11 18:59:26 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received PUT request for /foglamp/category/openweathermap/rate
+May 11 18:59:26 raspberrypi FogLAMP[4112] ERROR: configuration_manager: foglamp.common.configuration_manager: Unable to set item value entry based on category_name openweathermap and item_name rate and value_item_entry 5#012Traceback (most recent call last):#012  File "/usr/local/foglamp/python/foglamp/common/configuration_manager.py", line 331, in set_category_item_value_entry#012    .format(category_name, item_name))#012ValueError: No detail found for the category_name: openweathermap and item_name: rate
+May 11 18:59:33 raspberrypi systemd[1]: Stopping LSB: FogLAMP...
+May 11 18:59:33 raspberrypi foglamp[4412]:   PID TTY          TIME CMD
+May 11 18:59:33 raspberrypi foglamp[4412]:  4112 ?        00:00:07 python3
+May 11 18:59:33 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:59:33 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received PUT request for /foglamp/shutdown
+May 11 18:59:35 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:59:35 raspberrypi FogLAMP[4112] INFO: common: foglamp.services.core.api.common: Executing controlled shutdown
+May 11 18:59:35 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Processing stop request
+May 11 18:59:35 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Stopping process: Schedule 'OMF to PI north' process 'North Readings to PI' task 06d2841a-14c2-4a11-98b4-c477ef61585f pid 4389#012['tasks/north', '--stream_id', '1', '--debug_level', '1']
+May 11 18:59:35 raspberrypi FogLAMP[4390] INFO: sending_process: sending_process_1: _signal_handler - signal captured |15|
+May 11 18:59:35 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'OMF to PI north' process 'North Readings to PI' task 06d2841a-14c2-4a11-98b4-c477ef61585f pid 4389 exit -15, 2 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1']
+May 11 18:59:35 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Tasks will no longer execute for schedule 'OMF to PI north'
+May 11 18:59:36 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:59:36 raspberrypi FogLAMP[4390] INFO: sending_process: sending_process_1: send_data - signal received, stops the execution
+May 11 18:59:36 raspberrypi FogLAMP[4390] INFO: sending_process: sending_process_1: Execution completed.
+May 11 18:59:37 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:59:39 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:59:40 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:59:40 raspberrypi FogLAMP[4112] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Stopped
+May 11 18:59:40 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: Shutting down the Southbound service COAP ...
+May 11 18:59:40 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: Shutting down the Southbound service HTTP_SOUTH ...
+May 11 18:59:40 raspberrypi FogLAMP[4181] INFO: coap_listen: foglamp.plugins.south.coap_listen.coap_listen: Stopping South COAP plugin...
+May 11 18:59:40 raspberrypi FogLAMP[4181] INFO: coap_listen: foglamp.plugins.south.coap_listen.coap_listen: COAP plugin shut down.
+May 11 18:59:40 raspberrypi FogLAMP[4179] INFO: http_south: foglamp.plugins.south.http_south.http_south: Stopping South HTTP plugin.
+May 11 18:59:40 raspberrypi FogLAMP[4179] INFO: http_south: foglamp.plugins.south.http_south.http_south: South HTTP plugin shut down.
+May 11 18:59:41 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:59:42 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:59:44 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:59:45 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:59:51 raspberrypi FogLAMP[4112] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Stopped service instance id=68109b95-4076-4425-8775-7e3e593bc956: <COAP, type=Southbound, protocol=http, address=127.0.0.1, service port=44843, management port=44843, status=2>
+May 11 18:59:52 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: Successfully shut down the Southbound service COAP.
+May 11 18:59:57 raspberrypi FogLAMP[4112] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Stopped service instance id=28aecd8d-8d24-4f2d-9bba-c4a43c4b8804: <HTTP_SOUTH, type=Southbound, protocol=http, address=127.0.0.1, service port=46609, management port=46609, status=2>
+May 11 18:59:57 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:59:59 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: Successfully shut down the Southbound service HTTP_SOUTH.
+May 11 18:59:59 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: Services monitoring stopped.
+May 11 18:59:59 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: Rest server stopped.
+May 11 18:59:59 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: Shutting down the Storage service FogLAMP Storage ...
+May 11 18:59:59 raspberrypi FogLAMP[4112] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 18:59:59 raspberrypi FogLAMP Storage[4131]: Storage service shutdown in progress.
+May 11 18:59:59 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: Successfully shut down the Storage service FogLAMP Storage.
+May 11 18:59:59 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: FogLAMP PID file [/usr/local/foglamp/data/var/run/foglamp.core.pid] removed.
+May 11 18:59:59 raspberrypi FogLAMP[4112] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Stopped service instance id=df3aa8ab-ee91-4595-98fd-f9818cf4e0c5: <FogLAMP Storage, type=Storage, protocol=http, address=localhost, service port=46267, management port=42461, status=2>
+May 11 18:59:59 raspberrypi FogLAMP Storage[4131]: Unregister service failed Protocol error.
+May 11 18:59:59 raspberrypi FogLAMP Storage[4131]: Storage service shut down.
+May 11 19:00:01 raspberrypi FogLAMP[4112] INFO: server: foglamp.services.core.server: Stopping the FogLAMP Core event loop. Good Bye!
+May 11 19:00:02 raspberrypi FogLAMP [4430] INFO: script.foglamp: FogLAMP stopped.
+May 11 19:00:02 raspberrypi foglamp[4412]: FogLAMP stopped.
+May 11 19:00:02 raspberrypi foglamp[4412]: FogLAMP stopped [4112]
+May 11 19:00:02 raspberrypi systemd[1]: Stopped LSB: FogLAMP.
+May 11 19:00:02 raspberrypi systemd[1]: Starting LSB: FogLAMP...
+May 11 19:00:03 raspberrypi FogLAMP Storage[4597] INFO: script.plugin.storage.sqlite: SQLite 3 database '/usr/local/foglamp/data/foglamp.db' ready.
+May 11 19:00:03 raspberrypi FogLAMP Storage[4569] INFO: script.plugin.storage.sqlite: SQLite3 database is ready.
+May 11 19:00:03 raspberrypi FogLAMP Storage[4569] INFO: script.plugin.storage.sqlite: FogLAMP DB schema is up to date to version [1]
+May 11 19:00:05 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: start core
+May 11 19:00:05 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: Management API started on http://0.0.0.0:34425
+May 11 19:00:05 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: start storage, from directory /usr/local/foglamp/scripts
+May 11 19:00:05 raspberrypi FogLAMP Storage[4633]: Load storage plugin sqlite.
+May 11 19:00:05 raspberrypi FogLAMP Storage[4633]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 19:00:05 raspberrypi FogLAMP Storage[4633]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 19:00:05 raspberrypi FogLAMP Storage[4633]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 19:00:05 raspberrypi FogLAMP Storage[4633]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 19:00:05 raspberrypi FogLAMP Storage[4633]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 19:00:05 raspberrypi FogLAMP Storage[4633]: Loaded storage plugin sqlite.
+May 11 19:00:05 raspberrypi FogLAMP Storage[4633]: Starting management api on port 0.
+May 11 19:00:05 raspberrypi FogLAMP Storage[4633]: Starting service...
+May 11 19:00:07 raspberrypi FogLAMP[4614] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Registered service instance id=6816c3fb-9735-4826-a7c1-41601bf046c0: <FogLAMP Storage, type=Storage, protocol=http, address=localhost, service port=36071, management port=33535, status=1>
+May 11 19:00:07 raspberrypi FogLAMP Storage[4633]: Registered service 6816c3fb-9735-4826-a7c1-41601bf046c0.
+May 11 19:00:07 raspberrypi FogLAMP Storage[4633]: Failed to register configuration category: {"error": {"message": "[AttributeError] 'NoneType' object has no attribute 'register'"}}.
+May 11 19:00:09 raspberrypi FogLAMP Storage[4633]: Failed to register configuration category: {"error": {"message": "[AttributeError] 'NoneType' object has no attribute 'register'"}}.
+May 11 19:00:10 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: start scheduler
+May 11 19:00:10 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Starting
+May 11 19:00:10 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Starting Scheduler: Management port received is 34425
+May 11 19:00:10 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'purge' to start at 2018-05-11 20:00:10.942649
+May 11 19:00:10 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 19:00:25.942649
+May 11 19:00:10 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'certificate checker' to start at 2018-05-11 20:05:00
+May 11 19:00:10 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'HTTP listener south' to start at 2018-05-11 19:00:10.942649
+May 11 19:00:10 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'COAP listener south' to start at 2018-05-11 19:00:10.942649
+May 11 19:00:10 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'OMF to PI north' to start at 2018-05-11 19:00:40.942649
+May 11 19:00:10 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'openweathermap' to start at 2018-05-11 19:00:10.942649
+May 11 19:00:11 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: Services monitoring started ...
+May 11 19:00:11 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'HTTP listener south' process 'HTTP_SOUTH' task b4c7b565-bf7c-4a1a-a4c4-5e721dada367 pid 4672, 1 running tasks#012['services/south', '--port=34425', '--address=127.0.0.1', '--name=HTTP_SOUTH']
+May 11 19:00:11 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'openweathermap' process 'openweathermap' task 28db6ffb-e16a-494f-8d4c-f7a824057d8c pid 4674, 2 running tasks#012['services/south', '--port=34425', '--address=127.0.0.1', '--name=openweathermap']
+May 11 19:00:11 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'COAP listener south' process 'COAP' task 8b361d77-fe3d-4752-8d61-4c5503ca45bf pid 4677, 3 running tasks#012['services/south', '--port=34425', '--address=127.0.0.1', '--name=COAP']
+May 11 19:00:11 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 14.769007682800293 seconds
+May 11 19:00:11 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: Announce management API service
+May 11 19:00:11 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: PID [4614] written in [/usr/local/foglamp/data/var/run/foglamp.core.pid]
+May 11 19:00:11 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: REST API Server started on http://0.0.0.0:8081
+May 11 19:00:11 raspberrypi FogLAMP[4614] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Registered service instance id=64b3d6a6-7313-4d3e-9d88-403db72b1dc4: <FogLAMP Core, type=Core, protocol=http, address=0.0.0.0, service port=8081, management port=34425, status=1>
+May 11 19:00:12 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:00:12 raspberrypi FogLAMP [4569] INFO: script.foglamp: FogLAMP started.
+May 11 19:00:12 raspberrypi foglamp[4556]: FogLAMP started.
+May 11 19:00:12 raspberrypi foglamp[4556]: FogLAMP started [4614]
+May 11 19:00:12 raspberrypi systemd[1]: Started LSB: FogLAMP.
+May 11 19:00:13 raspberrypi FogLAMP Storage[4633]: Registered configuration category STORAGE, registration id 7a8521ab-673b-48d0-9780-3015bfe16e2f.
+May 11 19:00:13 raspberrypi FogLAMP[4614] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Registered service instance id=379e5116-a359-466d-95c8-d228086a88cb: <HTTP_SOUTH, type=Southbound, protocol=http, address=127.0.0.1, service port=45409, management port=45409, status=1>
+May 11 19:00:13 raspberrypi FogLAMP[4614] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Registered service instance id=18575bff-fca7-4fc7-9a3b-1702b79a89c0: <openweathermap, type=Southbound, protocol=http, address=127.0.0.1, service port=44359, management port=44359, status=1>
+May 11 19:00:13 raspberrypi FogLAMP[4614] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Registered service instance id=3789330b-1450-4c32-a3d8-1f90b5beb833: <COAP, type=Southbound, protocol=http, address=127.0.0.1, service port=35145, management port=35145, status=1>
+May 11 19:00:14 raspberrypi FogLAMP[4675] INFO: openweathermap: foglamp.plugins.south.openweathermap.openweathermap: Retrieve Weather Configuration {'city': {'value': 'London', 'type': 'string', 'description': 'City to obtain weather report for', 'default': 'London'}, 'plugin': {'value': 'openweathermap', 'type': 'string', 'description': 'Weather Report from OpenWeatherMap', 'default': 'openweathermap'}, 'appid': {'value': 'bbafe18fb275ae5b200d094e36c574ff', 'type': 'string', 'description': 'Application ID registered with OpenWeatherMap', 'default': 'bbafe18fb275ae5b200d094e36c574ff'}, 'rate': {'value': '300', 'type': 'integer', 'description': 'Rate at which to fetch weather report in seconds', 'default': '300'}, 'url': {'value': 'api.openweathermap.org', 'type': 'string', 'description': 'Port to listen on', 'default': 'api.openweathermap.org'}}
+May 11 19:00:14 raspberrypi FogLAMP[4678] INFO: coap_listen: foglamp.plugins.south.coap_listen.coap_listen: CoAP listener started on port 5683 with uri sensor-values
+May 11 19:00:25 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 77c2f246-8197-4efc-b769-8571e9aa39fe pid 4702, 4 running tasks#012['tasks/statistics', '--port=34425', '--address=127.0.0.1', '--name=stats collector']
+May 11 19:00:26 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 14.866227626800537 seconds
+May 11 19:00:27 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 77c2f246-8197-4efc-b769-8571e9aa39fe pid 4702 exit 0, 3 running tasks#012['tasks/statistics']
+May 11 19:00:27 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 19:00:40.942649
+May 11 19:00:27 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.456432104110718 seconds
+May 11 19:00:40 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'OMF to PI north' process 'North Readings to PI' task 4ea14a1d-31fe-43fd-8f3e-56b5d71b0790 pid 4707, 4 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1', '--port=34425', '--address=127.0.0.1', '--name=North Readings to PI']
+May 11 19:00:41 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task c4e4fbdd-cb0a-4014-ad9f-0f40faddef4f pid 4709, 5 running tasks#012['tasks/statistics', '--port=34425', '--address=127.0.0.1', '--name=stats collector']
+May 11 19:00:41 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 3569.858561038971 seconds
+May 11 19:00:41 raspberrypi FogLAMP[4708] INFO: sending_process: sending_process_1: sending_process, for Linux (x86_64) Copyright (c) 2017 OSIsoft, LLC
+May 11 19:00:41 raspberrypi FogLAMP[4708] INFO: sending_process: sending_process_1: Started.
+May 11 19:00:42 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task c4e4fbdd-cb0a-4014-ad9f-0f40faddef4f pid 4709 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 19:00:42 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 19:00:55.942649
+May 11 19:00:42 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.371142864227295 seconds
+May 11 19:00:55 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 6353de12-3f73-42d3-9162-5745ac3c3036 pid 4717, 5 running tasks#012['tasks/statistics', '--port=34425', '--address=127.0.0.1', '--name=stats collector']
+May 11 19:00:56 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 3554.9405953884125 seconds
+May 11 19:00:57 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 6353de12-3f73-42d3-9162-5745ac3c3036 pid 4717 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 19:00:57 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 19:01:10.942649
+May 11 19:00:57 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.458306550979614 seconds
+May 11 19:01:10 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task f1431af4-de71-47b5-b0b4-304636849ab4 pid 4722, 5 running tasks#012['tasks/statistics', '--port=34425', '--address=127.0.0.1', '--name=stats collector']
+May 11 19:01:11 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 3539.938291311264 seconds
+May 11 19:01:12 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task f1431af4-de71-47b5-b0b4-304636849ab4 pid 4722 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 19:01:12 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 19:01:25.942649
+May 11 19:01:12 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.428181886672974 seconds
+May 11 19:01:25 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task cb96146d-d6cf-4680-a704-1a6eab02caa1 pid 4727, 5 running tasks#012['tasks/statistics', '--port=34425', '--address=127.0.0.1', '--name=stats collector']
+May 11 19:01:26 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 3524.9287905693054 seconds
+May 11 19:01:27 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task cb96146d-d6cf-4680-a704-1a6eab02caa1 pid 4727 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 19:01:27 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 19:01:40.942649
+May 11 19:01:27 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.447242975234985 seconds
+May 11 19:01:40 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 22aa53ee-9688-4c40-8cba-780e60d1bcab pid 4732, 5 running tasks#012['tasks/statistics', '--port=34425', '--address=127.0.0.1', '--name=stats collector']
+May 11 19:01:41 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 3509.8931448459625 seconds
+May 11 19:01:42 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 22aa53ee-9688-4c40-8cba-780e60d1bcab pid 4732 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 19:01:42 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 19:01:55.942649
+May 11 19:01:42 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.518466711044312 seconds
+May 11 19:01:42 raspberrypi FogLAMP[4708] INFO: sending_process: sending_process_1: Execution completed.
+May 11 19:01:42 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'OMF to PI north' process 'North Readings to PI' task 4ea14a1d-31fe-43fd-8f3e-56b5d71b0790 pid 4707 exit 0, 3 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1']
+May 11 19:01:42 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'OMF to PI north' to start at 2018-05-11 19:02:10.942649
+May 11 19:01:42 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.033480167388916 seconds
+May 11 19:01:55 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 4d82defe-7604-45c8-bff3-e31fac75df83 pid 4736, 4 running tasks#012['tasks/statistics', '--port=34425', '--address=127.0.0.1', '--name=stats collector']
+May 11 19:01:56 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 14.876506328582764 seconds
+May 11 19:01:57 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 4d82defe-7604-45c8-bff3-e31fac75df83 pid 4736 exit 0, 3 running tasks#012['tasks/statistics']
+May 11 19:01:57 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 19:02:10.942649
+May 11 19:01:57 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.623848915100098 seconds
+May 11 19:02:10 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'OMF to PI north' process 'North Readings to PI' task 2e96025b-7231-46a8-970c-2130c3357689 pid 4738, 4 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1', '--port=34425', '--address=127.0.0.1', '--name=North Readings to PI']
+May 11 19:02:11 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 238ee186-2bc8-4c49-becb-35cc1557ffc3 pid 4740, 5 running tasks#012['tasks/statistics', '--port=34425', '--address=127.0.0.1', '--name=stats collector']
+May 11 19:02:11 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 3479.858346223831 seconds
+May 11 19:02:11 raspberrypi FogLAMP[4739] INFO: sending_process: sending_process_1: sending_process, for Linux (x86_64) Copyright (c) 2017 OSIsoft, LLC
+May 11 19:02:11 raspberrypi FogLAMP[4739] INFO: sending_process: sending_process_1: Started.
+May 11 19:02:12 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 238ee186-2bc8-4c49-becb-35cc1557ffc3 pid 4740 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 19:02:12 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 19:02:25.942649
+May 11 19:02:12 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.312169313430786 seconds
+May 11 19:02:25 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task fa666691-9d8c-492b-a732-929a5e888fc0 pid 4746, 5 running tasks#012['tasks/statistics', '--port=34425', '--address=127.0.0.1', '--name=stats collector']
+May 11 19:02:26 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 3464.895794391632 seconds
+May 11 19:02:27 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task fa666691-9d8c-492b-a732-929a5e888fc0 pid 4746 exit 0, 4 running tasks#012['tasks/statistics']
+May 11 19:02:27 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 19:02:40.942649
+May 11 19:02:27 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.360322952270508 seconds
+May 11 19:02:32 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:02:35 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received PUT request for /foglamp/category/openweathermap/rate
+May 11 19:02:35 raspberrypi FogLAMP[4614] ERROR: change_callback: foglamp.services.core.interest_registry.change_callback: Server error code: 500, reason: Internal Server Error
+May 11 19:02:38 raspberrypi systemd[1]: Stopping LSB: FogLAMP...
+May 11 19:02:38 raspberrypi foglamp[4769]:   PID TTY          TIME CMD
+May 11 19:02:38 raspberrypi foglamp[4769]:  4614 ?        00:00:06 python3
+May 11 19:02:39 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:02:39 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received PUT request for /foglamp/shutdown
+May 11 19:02:40 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:02:40 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 67301dea-f199-4469-9702-92c31bd1354d pid 4819, 5 running tasks#012['tasks/statistics', '--port=34425', '--address=127.0.0.1', '--name=stats collector']
+May 11 19:02:41 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 3449.9372079372406 seconds
+May 11 19:02:41 raspberrypi FogLAMP[4614] INFO: common: foglamp.services.core.api.common: Executing controlled shutdown
+May 11 19:02:41 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Processing stop request
+May 11 19:02:41 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Stopping process: Schedule 'OMF to PI north' process 'North Readings to PI' task 2e96025b-7231-46a8-970c-2130c3357689 pid 4738#012['tasks/north', '--stream_id', '1', '--debug_level', '1']
+May 11 19:02:41 raspberrypi FogLAMP[4739] INFO: sending_process: sending_process_1: _signal_handler - signal captured |15|
+May 11 19:02:41 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Stopping process: Schedule 'stats collection' process 'stats collector' task 67301dea-f199-4469-9702-92c31bd1354d pid 4819#012['tasks/statistics']
+May 11 19:02:41 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 67301dea-f199-4469-9702-92c31bd1354d pid 4819 exit -15, 4 running tasks#012['tasks/statistics']
+May 11 19:02:41 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Tasks will no longer execute for schedule 'stats collection'
+May 11 19:02:41 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'OMF to PI north' process 'North Readings to PI' task 2e96025b-7231-46a8-970c-2130c3357689 pid 4738 exit -15, 3 running tasks#012['tasks/north', '--stream_id', '1', '--debug_level', '1']
+May 11 19:02:41 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Tasks will no longer execute for schedule 'OMF to PI north'
+May 11 19:02:41 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:02:42 raspberrypi FogLAMP[4739] INFO: sending_process: sending_process_1: send_data - signal received, stops the execution
+May 11 19:02:42 raspberrypi FogLAMP[4739] INFO: sending_process: sending_process_1: Execution completed.
+May 11 19:02:42 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:02:44 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:02:45 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:02:46 raspberrypi FogLAMP[4614] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Stopped
+May 11 19:02:46 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: Shutting down the Southbound service openweathermap ...
+May 11 19:02:46 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: Shutting down the Southbound service COAP ...
+May 11 19:02:46 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: Shutting down the Southbound service HTTP_SOUTH ...
+May 11 19:02:46 raspberrypi FogLAMP[4673] INFO: http_south: foglamp.plugins.south.http_south.http_south: Stopping South HTTP plugin.
+May 11 19:02:46 raspberrypi FogLAMP[4673] INFO: http_south: foglamp.plugins.south.http_south.http_south: South HTTP plugin shut down.
+May 11 19:02:46 raspberrypi FogLAMP[4678] INFO: coap_listen: foglamp.plugins.south.coap_listen.coap_listen: Stopping South COAP plugin...
+May 11 19:02:46 raspberrypi FogLAMP[4678] INFO: coap_listen: foglamp.plugins.south.coap_listen.coap_listen: COAP plugin shut down.
+May 11 19:02:46 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:02:48 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:02:49 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:02:50 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:02:56 raspberrypi FogLAMP[4614] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Stopped service instance id=18575bff-fca7-4fc7-9a3b-1702b79a89c0: <openweathermap, type=Southbound, protocol=http, address=127.0.0.1, service port=44359, management port=44359, status=2>
+May 11 19:02:58 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: Successfully shut down the Southbound service openweathermap.
+May 11 19:03:03 raspberrypi FogLAMP[4614] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Stopped service instance id=379e5116-a359-466d-95c8-d228086a88cb: <HTTP_SOUTH, type=Southbound, protocol=http, address=127.0.0.1, service port=45409, management port=45409, status=2>
+May 11 19:03:08 raspberrypi FogLAMP[4614] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Stopped service instance id=3789330b-1450-4c32-a3d8-1f90b5beb833: <COAP, type=Southbound, protocol=http, address=127.0.0.1, service port=35145, management port=35145, status=2>
+May 11 19:03:08 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:03:11 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: Successfully shut down the Southbound service HTTP_SOUTH.
+May 11 19:03:11 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: Successfully shut down the Southbound service COAP.
+May 11 19:03:11 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: Services monitoring stopped.
+May 11 19:03:11 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: Rest server stopped.
+May 11 19:03:11 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: Shutting down the Storage service FogLAMP Storage ...
+May 11 19:03:11 raspberrypi FogLAMP[4614] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:03:11 raspberrypi FogLAMP Storage[4633]: Storage service shutdown in progress.
+May 11 19:03:11 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: Successfully shut down the Storage service FogLAMP Storage.
+May 11 19:03:11 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: FogLAMP PID file [/usr/local/foglamp/data/var/run/foglamp.core.pid] removed.
+May 11 19:03:11 raspberrypi FogLAMP[4614] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Stopped service instance id=6816c3fb-9735-4826-a7c1-41601bf046c0: <FogLAMP Storage, type=Storage, protocol=http, address=localhost, service port=36071, management port=33535, status=2>
+May 11 19:03:11 raspberrypi FogLAMP Storage[4633]: Unregister service failed Protocol error.
+May 11 19:03:11 raspberrypi FogLAMP Storage[4633]: Storage service shut down.
+May 11 19:03:13 raspberrypi FogLAMP[4614] INFO: server: foglamp.services.core.server: Stopping the FogLAMP Core event loop. Good Bye!
+May 11 19:03:14 raspberrypi FogLAMP [4787] INFO: script.foglamp: FogLAMP stopped.
+May 11 19:03:14 raspberrypi foglamp[4769]: FogLAMP stopped.
+May 11 19:03:14 raspberrypi foglamp[4769]: FogLAMP stopped [4614]
+May 11 19:03:14 raspberrypi systemd[1]: Stopped LSB: FogLAMP.
+May 11 19:03:14 raspberrypi systemd[1]: Starting LSB: FogLAMP...
+May 11 19:03:15 raspberrypi FogLAMP Storage[4959] INFO: script.plugin.storage.sqlite: SQLite 3 database '/usr/local/foglamp/data/foglamp.db' ready.
+May 11 19:03:15 raspberrypi FogLAMP Storage[4931] INFO: script.plugin.storage.sqlite: SQLite3 database is ready.
+May 11 19:03:15 raspberrypi FogLAMP Storage[4931] INFO: script.plugin.storage.sqlite: FogLAMP DB schema is up to date to version [1]
+May 11 19:03:17 raspberrypi FogLAMP[4976] INFO: server: foglamp.services.core.server: start core
+May 11 19:03:17 raspberrypi FogLAMP[4976] INFO: server: foglamp.services.core.server: Management API started on http://0.0.0.0:44821
+May 11 19:03:17 raspberrypi FogLAMP[4976] INFO: server: foglamp.services.core.server: start storage, from directory /usr/local/foglamp/scripts
+May 11 19:03:17 raspberrypi FogLAMP Storage[4995]: Load storage plugin sqlite.
+May 11 19:03:17 raspberrypi FogLAMP Storage[4995]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 19:03:17 raspberrypi FogLAMP Storage[4995]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 19:03:17 raspberrypi FogLAMP Storage[4995]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 19:03:17 raspberrypi FogLAMP Storage[4995]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 19:03:17 raspberrypi FogLAMP Storage[4995]: Connected to SQLite3 database: /usr/local/foglamp/data/foglamp.db
+May 11 19:03:17 raspberrypi FogLAMP Storage[4995]: Loaded storage plugin sqlite.
+May 11 19:03:17 raspberrypi FogLAMP Storage[4995]: Starting management api on port 0.
+May 11 19:03:17 raspberrypi FogLAMP Storage[4995]: Starting service...
+May 11 19:03:18 raspberrypi FogLAMP[4976] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Registered service instance id=3630e297-e0a1-401d-a974-7af863f19e34: <FogLAMP Storage, type=Storage, protocol=http, address=localhost, service port=45363, management port=34561, status=1>
+May 11 19:03:18 raspberrypi FogLAMP Storage[4995]: Registered service 3630e297-e0a1-401d-a974-7af863f19e34.
+May 11 19:03:18 raspberrypi FogLAMP Storage[4995]: Failed to register configuration category: {"error": {"message": "[AttributeError] 'NoneType' object has no attribute 'register'"}}.
+May 11 19:03:20 raspberrypi FogLAMP Storage[4995]: Failed to register configuration category: {"error": {"message": "[AttributeError] 'NoneType' object has no attribute 'register'"}}.
+May 11 19:03:22 raspberrypi FogLAMP[4976] INFO: server: foglamp.services.core.server: start scheduler
+May 11 19:03:22 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Starting
+May 11 19:03:22 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Starting Scheduler: Management port received is 44821
+May 11 19:03:22 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'purge' to start at 2018-05-11 20:03:22.813076
+May 11 19:03:22 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 19:03:37.813076
+May 11 19:03:22 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'certificate checker' to start at 2018-05-11 20:05:00
+May 11 19:03:22 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'HTTP listener south' to start at 2018-05-11 19:03:22.813076
+May 11 19:03:22 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'COAP listener south' to start at 2018-05-11 19:03:22.813076
+May 11 19:03:22 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'OMF to PI north' to start at 2018-05-11 19:03:52.813076
+May 11 19:03:22 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'openweathermap' to start at 2018-05-11 19:03:22.813076
+May 11 19:03:22 raspberrypi FogLAMP[4976] INFO: server: foglamp.services.core.server: Services monitoring started ...
+May 11 19:03:22 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'HTTP listener south' process 'HTTP_SOUTH' task 5df1f739-013b-4615-aa13-981b3c36d273 pid 5034, 1 running tasks#012['services/south', '--port=44821', '--address=127.0.0.1', '--name=HTTP_SOUTH']
+May 11 19:03:22 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'openweathermap' process 'openweathermap' task 1d8b2383-df60-4900-9b61-f9fd97dc3880 pid 5036, 2 running tasks#012['services/south', '--port=44821', '--address=127.0.0.1', '--name=openweathermap']
+May 11 19:03:23 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'COAP listener south' process 'COAP' task b3c9e4ef-bea7-4f0e-a9fa-fd4e8f05fc94 pid 5039, 3 running tasks#012['services/south', '--port=44821', '--address=127.0.0.1', '--name=COAP']
+May 11 19:03:23 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 14.764860153198242 seconds
+May 11 19:03:23 raspberrypi FogLAMP[4976] INFO: server: foglamp.services.core.server: Announce management API service
+May 11 19:03:23 raspberrypi FogLAMP[4976] INFO: server: foglamp.services.core.server: PID [4976] written in [/usr/local/foglamp/data/var/run/foglamp.core.pid]
+May 11 19:03:23 raspberrypi FogLAMP[4976] INFO: server: foglamp.services.core.server: REST API Server started on http://0.0.0.0:8081
+May 11 19:03:23 raspberrypi FogLAMP[4976] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Registered service instance id=068d2c4c-f2d0-4cec-bc6c-36376ece0fd6: <FogLAMP Core, type=Core, protocol=http, address=0.0.0.0, service port=8081, management port=44821, status=1>
+May 11 19:03:24 raspberrypi FogLAMP[4976] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:03:24 raspberrypi FogLAMP [4931] INFO: script.foglamp: FogLAMP started.
+May 11 19:03:24 raspberrypi foglamp[4918]: FogLAMP started.
+May 11 19:03:24 raspberrypi foglamp[4918]: FogLAMP started [4976]
+May 11 19:03:24 raspberrypi systemd[1]: Started LSB: FogLAMP.
+May 11 19:03:24 raspberrypi FogLAMP Storage[4995]: Registered configuration category STORAGE, registration id 25548253-96bc-4922-9177-600c2f65e9bf.
+May 11 19:03:25 raspberrypi FogLAMP[4976] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Registered service instance id=9c32cbd9-2570-4bf2-858c-6271ef9291fb: <HTTP_SOUTH, type=Southbound, protocol=http, address=127.0.0.1, service port=46069, management port=46069, status=1>
+May 11 19:03:25 raspberrypi FogLAMP[4976] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Registered service instance id=39bf5188-6760-4400-9c73-0be5a305a822: <openweathermap, type=Southbound, protocol=http, address=127.0.0.1, service port=42845, management port=42845, status=1>
+May 11 19:03:25 raspberrypi FogLAMP[4976] INFO: service_registry: foglamp.services.core.service_registry.service_registry: Registered service instance id=b6fc616b-1a82-440b-b3c9-2ac976f20741: <COAP, type=Southbound, protocol=http, address=127.0.0.1, service port=36327, management port=36327, status=1>
+May 11 19:03:25 raspberrypi FogLAMP[5037] INFO: openweathermap: foglamp.plugins.south.openweathermap.openweathermap: Retrieve Weather Configuration {'city': {'description': 'City to obtain weather report for', 'type': 'string', 'default': 'London', 'value': 'London'}, 'url': {'description': 'Port to listen on', 'type': 'string', 'default': 'api.openweathermap.org', 'value': 'api.openweathermap.org'}, 'rate': {'description': 'Rate at which to fetch weather report in seconds', 'type': 'integer', 'default': '300', 'value': '5'}, 'appid': {'description': 'Application ID registered with OpenWeatherMap', 'type': 'string', 'default': 'bbafe18fb275ae5b200d094e36c574ff', 'value': 'bbafe18fb275ae5b200d094e36c574ff'}, 'plugin': {'description': 'Weather Report from OpenWeatherMap', 'type': 'string', 'default': 'openweathermap', 'value': 'openweathermap'}}
+May 11 19:03:26 raspberrypi FogLAMP[5040] INFO: coap_listen: foglamp.plugins.south.coap_listen.coap_listen: CoAP listener started on port 5683 with uri sensor-values
+May 11 19:03:29 raspberrypi FogLAMP[4976] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:03:30 raspberrypi FogLAMP[4976] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:03:31 raspberrypi FogLAMP[4976] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:03:33 raspberrypi FogLAMP[4976] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:03:34 raspberrypi FogLAMP[4976] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:03:34 raspberrypi FogLAMP[4976] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:03:35 raspberrypi FogLAMP[4976] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:03:36 raspberrypi FogLAMP[4976] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:03:37 raspberrypi FogLAMP[4976] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:03:37 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process started: Schedule 'stats collection' process 'stats collector' task 931366dc-dc2e-4ec9-b623-260143f5d2ef pid 5091, 4 running tasks#012['tasks/statistics', '--port=44821', '--address=127.0.0.1', '--name=stats collector']
+May 11 19:03:37 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 14.918878078460693 seconds
+May 11 19:03:39 raspberrypi FogLAMP[4976] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:03:39 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Process terminated: Schedule 'stats collection' process 'stats collector' task 931366dc-dc2e-4ec9-b623-260143f5d2ef pid 5091 exit 0, 3 running tasks#012['tasks/statistics']
+May 11 19:03:39 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Scheduled task for schedule 'stats collection' to start at 2018-05-11 19:03:52.813076
+May 11 19:03:39 raspberrypi FogLAMP[4976] INFO: scheduler: foglamp.services.core.scheduler.scheduler: Sleeping for 13.269175291061401 seconds
+May 11 19:03:40 raspberrypi FogLAMP[4976] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
+May 11 19:03:40 raspberrypi FogLAMP[4976] INFO: middleware: foglamp.common.web.middleware: Received GET request for /foglamp/ping
