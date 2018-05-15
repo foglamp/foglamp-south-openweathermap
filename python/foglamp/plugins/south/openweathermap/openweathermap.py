@@ -10,20 +10,20 @@ from foglamp.services.south.ingest import Ingest
 from datetime import datetime, timezone
 import uuid
 
-__author__ = "Mark Riddoch"
+__author__ = "Mark Riddoch, Ashwin Gopalakrishnan"
 __copyright__ = "Copyright (c) 2018 Dianomic Systems"
 __license__ = "Apache 2.0"
 __version__ = "${VERSION}"
 
 _LOGGER = logger.setup(__name__, level=20)
 
-_CONFIG_CATEGORY_NAME = 'Weather'
+_CONFIG_CATEGORY_NAME = 'openweathermap'
 _CONFIG_CATEGORY_DESCRIPTION = 'Weather Report from OpenWeatherMap'
 _DEFAULT_CONFIG = {
     'plugin': {
          'description': 'Weather Report from OpenWeatherMap',
          'type': 'string',
-         'default': 'Weather'
+         'default': 'openweathermap'
     },
     'url': {
         'description': 'Port to listen on',
@@ -31,7 +31,7 @@ _DEFAULT_CONFIG = {
         'default': 'api.openweathermap.org'
     },
     'city': {
-        'description': 'City to obtain weather reprot for',
+        'description': 'City to obtain weather report for',
         'type': 'string',
         'default': 'London'
     },
@@ -43,13 +43,13 @@ _DEFAULT_CONFIG = {
     'rate': {
         'description': 'Rate at which to fetch weather report in seconds',
         'type': 'integer',
-        'default': '300'
+        'default': '10'
     }
 }
 
 
 def plugin_info():
-    return {'name': 'weather', 'version': '1.0', 'mode': 'async', 'type': 'south',
+    return {'name': 'openweathermap', 'version': '1.0', 'mode': 'async', 'type': 'south',
             'interface': '1.0', 'config': _DEFAULT_CONFIG}
 
 
@@ -127,11 +127,13 @@ class WeatherReport(object):
                     increment_discarded_counter = True
                     message = {'busy': True}
                  else:
-                    asset = 'Weather'
+                    asset = 'OpenWeatherMap'
                     timestamp = str(datetime.now(tz=timezone.utc))
                     data = json.loads(res)
-                    readings = {'wind': data['wind'], 'temperature' : data['main']['temp'],
-                                'pressure': data['main']['pressure'], 'visibility': data['visibility']}
+                    readings = {'wind_deg': data['wind']['deg'], 'wind_speed': data['wind']['speed'], 
+                                'temperature' : data['main']['temp'],
+                                'pressure': data['main']['pressure'], 
+                                'visibility': data['visibility']}
                     key = str(uuid.uuid4())
                     await Ingest.add_readings(asset=asset, timestamp=timestamp, key=key, readings=readings)
 
