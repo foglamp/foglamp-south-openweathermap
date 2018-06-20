@@ -1,14 +1,23 @@
+# -*- coding: utf-8 -*-
 
+# FOGLAMP_BEGIN
+# See: http://foglamp.readthedocs.io/
+# FOGLAMP_END
 
-"""HTTP Listener handler for sensor phone application readings"""
+""" Weather report from OpenWeatherMap async plugin """
+
+import copy
 import sys
 import asyncio
 import http.client
 import json
-from foglamp.common import logger
-from foglamp.services.south.ingest import Ingest
 from datetime import datetime, timezone
 import uuid
+from aiohttp import web
+from foglamp.common import logger
+from foglamp.plugins.common import utils
+from foglamp.services.south.ingest import Ingest
+
 
 __author__ = "Mark Riddoch, Ashwin Gopalakrishnan"
 __copyright__ = "Copyright (c) 2018 Dianomic Systems"
@@ -21,9 +30,9 @@ _CONFIG_CATEGORY_NAME = 'openweathermap'
 _CONFIG_CATEGORY_DESCRIPTION = 'Weather Report from OpenWeatherMap'
 _DEFAULT_CONFIG = {
     'plugin': {
-         'description': 'Weather Report from OpenWeatherMap',
-         'type': 'string',
-         'default': 'openweathermap'
+        'description': 'Weather Report from OpenWeatherMap',
+        'type': 'string',
+        'default': 'openweathermap'
     },
     'url': {
         'description': 'Port to listen on',
@@ -49,12 +58,12 @@ _DEFAULT_CONFIG = {
 
 
 def plugin_info():
-    return {'name': 'openweathermap', 'version': '1.0', 'mode': 'async', 'type': 'south',
+    return {'name': 'OpenWeatherMap plugin', 'version': '1.0', 'mode': 'async', 'type': 'south',
             'interface': '1.0', 'config': _DEFAULT_CONFIG}
 
 
 def plugin_init(config):
-    """Create the WeatherReport class that will periodically fetch weather data"""
+    """ Create the WeatherReport class that will periodically fetch weather data """
 
     _LOGGER.info("Retrieve Weather Configuration %s", config)
 
@@ -69,18 +78,21 @@ def plugin_init(config):
 def plugin_start(task):
     try:
         task.start()
-        
+
     except Exception as e:
         _LOGGER.exception(str(e))
         sys.exit(1)
 
 
-def plugin_reconfigure(config):
+def plugin_reconfigure(handle, new_config):
+    # TODO: when appid, city, url, rate config value changed it should reconfigure and restart
     pass
 
 
 def plugin_shutdown(task):
     try:
+        _LOGGER.info('South openweathermap plugin shut down.')
+
         task.stop()
     except Exception as e:
         _LOGGER.exception(str(e))
@@ -88,52 +100,46 @@ def plugin_shutdown(task):
 
 
 class WeatherReport(object):
+    """ Handle interation with OpenWeatherMap API """
 
+    def __init__(self, url, city, appid, rate):
+        self._interval = float(rate)
+        self._loop = asyncio.get_event_loop()
+        self.url = url
+        self.city = city
+        self.appid = appid
+        self.rate = rate
 
-        """Handle interation with OpenWeatherMap API
+    def _run(self):
+        asyncio.ensure_future(self.fetch())
+        self._handler = self._loop.call_later(self._interval, self._run)
 
-        """
+    def start(self):
+        self._handler = self._loop.call_later(self._interval, self._run)
 
+    def stop(self):
+        self._handler.cancel()
 
-        def __init__(self, url, city, appid, rate):
-             self._interval = float(rate)
-             self._loop = asyncio.get_event_loop()
-             self.url = url
-             self.city = city
-             self.appid = appid
-             self.rate = rate
+    async def fetch(self):
+        conn = http.client.HTTPConnection(self.url)
 
-        def _run(self):
-             asyncio.ensure_future(self.fetch())
-             self._handler = self._loop.call_later(self._interval, self._run)
+        conn.request('GET', '/data/2.5/weather?q={}&APPID={}'.format(self.city, self.appid))
 
-        def start(self):
-             self._handler = self._loop.call_later(self._interval, self._run)
+        r = conn.getresponse()
+        if r.status == 200:
+            res = r.read().decode()
+            conn.close()
 
-        def stop(self):
-             self._handler.cancel()
-
-        async def fetch(self):
-             conn = http.client.HTTPConnection(self.url)
-
-             conn.request('GET', '/data/2.5/weather?q={}&APPID={}'.format(self.city, self.appid))
-
-             r = conn.getresponse()
-             if r.status == 200:
-                 res = r.read().decode()
-                 conn.close()
-                 
-                 if not Ingest.is_available():
-                    increment_discarded_counter = True
-                    message = {'busy': True}
-                 else:
-                    asset = 'OpenWeatherMap'
-                    timestamp = str(datetime.now(tz=timezone.utc))
-                    data = json.loads(res)
-                    readings = {'wind_deg': data['wind']['deg'], 'wind_speed': data['wind']['speed'], 
-                                'temperature' : data['main']['temp'],
-                                'pressure': data['main']['pressure'], 
-                                'visibility': data['visibility']}
-                    key = str(uuid.uuid4())
-                    await Ingest.add_readings(asset=asset, timestamp=timestamp, key=key, readings=readings)
-
+            if not Ingest.is_available():
+                message = {'busy': True}
+                raise web.HTTPServiceUnavailable(reason=message)
+            else:
+                asset = 'OpenWeatherMap'
+                timestamp = str(datetime.now(tz=timezone.utc))
+                data = json.loads(res)
+                readings = {'wind_deg': data['wind']['deg'], 'wind_speed': data['wind']['speed'],
+                            'temperature': data['main']['temp'],
+                            'pressure': data['main']['pressure'],
+                            'visibility': data['visibility']}
+                key = str(uuid.uuid4())
+                await Ingest.add_readings(asset=asset, timestamp=timestamp, key=key, readings=readings)
