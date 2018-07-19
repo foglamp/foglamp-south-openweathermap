@@ -29,7 +29,7 @@ Finally, run the ``make_deb`` command:
 $ ./make_deb arm
 The package root directory is               : /home/foglamp/Development/foglamp-south-openweathermap
 The FogLAMP south openweathermap version is : 1.0.0
-The Package will be built in                : /home/foglamp/Development/foglamp-south-openweathermap/packages/Debian/build
+The package will be built in                : /home/foglamp/Development/foglamp-south-openweathermap/packages/Debian/build
 The architecture is set as                  : armhf
 The package name is                         : foglamp-south-openweathermap-1.0.0-armhf
 
@@ -56,7 +56,7 @@ If you execute the ``make_deb`` command again, you will see:
 $ ./make_deb arm
 The package root directory is               : /home/foglamp/Development/foglamp-south-openweathermap
 The FogLAMP south openweathermap version is : 1.0.0
-The Package will be built in                : /home/foglamp/Development/foglamp-south-openweathermap/packages/Debian/build
+The package will be built in                : /home/foglamp/Development/foglamp-south-openweathermap/packages/Debian/build
 The architecture is set as                  : armhf
 The package name is                         : foglamp-south-openweathermap-1.0.0-armhf
 
