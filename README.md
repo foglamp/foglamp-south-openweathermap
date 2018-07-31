@@ -9,12 +9,10 @@ This repo contains the scripts used to create a foglamp-south-openweathermap pac
 ```
 $ ./make_deb help
 
- make_deb help {x86|arm} [clean|cleanall]
+ make_deb help [clean|cleanall]
 This script is used to create the Debian package of foglamp south openweathermap
 Arguments:
  help     - Display this help text
- x86      - Build an x86_64 package
- arm      - Build an armhf package
  clean    - Remove all the old versions saved in format .XXXX
  cleanall - Remove all the versions, including the last one
 $
@@ -22,20 +20,18 @@ $
 
 #### Building a Package
 
-Select the architecture to use, *x86* or *arm*.
 Finally, run the ``make_deb`` command:
 
 ```
-$ ./make_deb arm
+$ ./make_deb
 The package root directory is               : /home/foglamp/Development/foglamp-south-openweathermap
 The FogLAMP south openweathermap version is : 1.0.0
-The package will be built in                : /home/foglamp/Development/foglamp-south-openweathermap/packages/Debian/build
-The architecture is set as                  : armhf
-The package name is                         : foglamp-south-openweathermap-1.0.0-armhf
+The package will be built in                : /home/foglamp/Development/foglamp-south-openweathermap/packages/build
+The package name is                         : foglamp-south-openweathermap-1.0.0
 
 Populating the package and updating version file...Done.
 Building the new package...
-dpkg-deb: building package 'foglamp-south-openweathermap' in 'foglamp-south-openweathermap-1.0.0-armhf.deb'.
+dpkg-deb: building package 'foglamp-south-openweathermap' in 'foglamp-south-openweathermap-1.0.0.deb'.
 Building Complete.
 $
 ```
@@ -43,39 +39,38 @@ $
 The result will be:
 
 ```
-$ ls -l packages/Debian/build/
+$ ls -l packages/build/
 total 12
-drwxrwxr-x 4 foglamp foglamp 4096 Jun 20 15:19 foglamp-south-openweathermap-1.0.0-armhf
--rw-r--r-- 1 foglamp foglamp 5570 Jun 20 15:19 foglamp-south-openweathermap-1.0.0-armhf.deb
+drwxrwxr-x 4 foglamp foglamp 4096 Jun 20 15:19 foglamp-south-openweathermap-1.0.0
+-rw-r--r-- 1 foglamp foglamp 5570 Jun 20 15:19 foglamp-south-openweathermap-1.0.0.deb
 $
 ```
 
 If you execute the ``make_deb`` command again, you will see:
 
 ```
-$ ./make_deb arm
+$ ./make_deb
 The package root directory is               : /home/foglamp/Development/foglamp-south-openweathermap
 The FogLAMP south openweathermap version is : 1.0.0
-The package will be built in                : /home/foglamp/Development/foglamp-south-openweathermap/packages/Debian/build
-The architecture is set as                  : armhf
-The package name is                         : foglamp-south-openweathermap-1.0.0-armhf
+The package will be built in                : /home/foglamp/Development/foglamp-south-openweathermap/packages/build
+The package name is                         : foglamp-south-openweathermap-1.0.0
 
-Saving the old working environment as foglamp-south-openweathermap-1.0.0-armhf.0001
+Saving the old working environment as foglamp-south-openweathermap-1.0.0.0001
 Populating the package and updating version file...Done.
-Saving the old package as foglamp-south-openweathermap-1.0.0-armhf.deb.0001
+Saving the old package as foglamp-south-openweathermap-1.0.0.deb.0001
 Building the new package...
-dpkg-deb: building package 'foglamp-south-openweathermap' in 'foglamp-south-openweathermap-1.0.0-armhf.deb'.
+dpkg-deb: building package 'foglamp-south-openweathermap' in 'foglamp-south-openweathermap-1.0.0.deb'.
 Building Complete.
 $
 ```
 
 ```
-$ ls -l packages/Debian/build/
+$ ls -l packages/build/
 total 24
-drwxrwxr-x 4 foglamp foglamp 4096 Jun 20 15:21 foglamp-south-openweathermap-1.0.0-armhf
-drwxrwxr-x 4 foglamp foglamp 4096 Jun 20 15:19 foglamp-south-openweathermap-1.0.0-armhf.0001
--rw-r--r-- 1 foglamp foglamp 5570 Jun 20 15:21 foglamp-south-openweathermap-1.0.0-armhf.deb
--rw-r--r-- 1 foglamp foglamp 5570 Jun 20 15:19 foglamp-south-openweathermap-1.0.0-armhf.deb.0001
+drwxrwxr-x 4 foglamp foglamp 4096 Jun 20 15:21 foglamp-south-openweathermap-1.0.0
+drwxrwxr-x 4 foglamp foglamp 4096 Jun 20 15:19 foglamp-south-openweathermap-1.0.0.0001
+-rw-r--r-- 1 foglamp foglamp 5570 Jun 20 15:21 foglamp-south-openweathermap-1.0.0.deb
+-rw-r--r-- 1 foglamp foglamp 5570 Jun 20 15:19 foglamp-south-openweathermap-1.0.0.deb.0001
 $
 ```
 ... where the previous build is now marked with the suffix *.0001*.

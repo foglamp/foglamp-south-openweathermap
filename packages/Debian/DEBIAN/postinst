@@ -33,7 +33,7 @@ set_files_ownership () {
 
 add_service () {
     output=$(curl -sX POST http://localhost:8081/foglamp/service -d '{"name": "OpenWeatherMap", "type": "south", "plugin": "openweathermap", "enabled": true}')
-    echo $output
+    echo ${output}
 }
 
 set_files_ownership
