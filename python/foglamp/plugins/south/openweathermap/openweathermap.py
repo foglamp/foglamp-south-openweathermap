@@ -178,17 +178,22 @@ class WeatherReport(object):
                 message = {'busy': True}
                 raise web.HTTPServiceUnavailable(reason=message)
 
-            data = json.loads(res)
-            readings = {
-                'readings' : {
-                    'city': data['name'],
-                    'wind_speed': data['wind']['speed'],
-                    'clouds': data['clouds']['all'],
-                    'temperature': data['main']['temp'],
-                    'pressure': data['main']['pressure'],
-                    'humidity': data['main']['humidity'],
-                    'visibility': data['visibility']
-                }
+            jdoc = json.loads(res)
+            reads = {
+                    'city': jdoc['name'],
+                    'wind_speed': jdoc['wind']['speed'],
+                    'clouds': jdoc['clouds']['all'],
+                    'temperature': jdoc['main']['temp'],
+                    'pressure': jdoc['main']['pressure'],
+                    'humidity': jdoc['main']['humidity'],
+                    'visibility': jdoc['visibility']
             }
-            await Ingest.add_readings(asset=self.asset_name, timestamp=utils.local_timestamp(),
-                                      key=str(uuid.uuid4()), readings=readings)
+            data = {
+                'asset': self.asset_name,
+                'timestamp': utils.local_timestamp(),
+                'key': str(uuid.uuid4()),
+                'readings': reads
+            }
+            await Ingest.add_readings(asset='{}'.format(data['asset']),
+                                      timestamp=data['timestamp'], key=data['key'],
+                                      readings=data['readings'])
