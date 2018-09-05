@@ -13,7 +13,10 @@ import http.client
 import json
 from datetime import datetime, timezone
 import uuid
+import logging
+
 from aiohttp import web
+
 from foglamp.common import logger
 from foglamp.plugins.common import utils
 from foglamp.services.south.ingest import Ingest
@@ -24,7 +27,7 @@ __copyright__ = "Copyright (c) 2018 Dianomic Systems"
 __license__ = "Apache 2.0"
 __version__ = "${VERSION}"
 
-_LOGGER = logger.setup(__name__, level=20)
+_LOGGER = logger.setup(__name__, level=logging.INFO)
 
 _CONFIG_CATEGORY_NAME = 'openweathermap'
 _CONFIG_CATEGORY_DESCRIPTION = 'Weather Report from OpenWeatherMap'
@@ -32,34 +35,46 @@ _DEFAULT_CONFIG = {
     'plugin': {
         'description': 'Weather Report from OpenWeatherMap',
         'type': 'string',
-        'default': 'openweathermap'
+        'default': 'openweathermap',
+        'readonly': 'true'
     },
     'url': {
-        'description': 'Port to listen on',
+        'description': 'API URL to fetch information',
         'type': 'string',
-        'default': 'api.openweathermap.org'
+        'default': 'api.openweathermap.org',
+        'order': '1'
     },
     'city': {
         'description': 'City to obtain weather report for',
         'type': 'string',
-        'default': 'London'
+        'default': 'London',
+        'order': '3'
     },
     'appid': {
         'description': 'Application ID registered with OpenWeatherMap',
         'type': 'string',
-        'default': 'bbafe18fb275ae5b200d094e36c574ff'
+        'default': 'bbafe18fb275ae5b200d094e36c574ff',
+        'order': '2'
     },
     'rate': {
         'description': 'Rate at which to fetch weather report in seconds',
         'type': 'integer',
-        'default': '10'
+        'default': '10',
+        'minimum': '5',
+        'order': '4'
     }
 }
 
 
 def plugin_info():
-    return {'name': 'OpenWeatherMap plugin', 'version': '1.0', 'mode': 'async', 'type': 'south',
-            'interface': '1.0', 'config': _DEFAULT_CONFIG}
+    return {
+        'name': 'OpenWeatherMap plugin',
+        'version': '1.0',
+        'mode': 'async',
+        'type': 'south',
+        'interface': '1.0',
+        'config': _DEFAULT_CONFIG
+    }
 
 
 def plugin_init(config):
@@ -78,21 +93,44 @@ def plugin_init(config):
 def plugin_start(task):
     try:
         task.start()
-
     except Exception as e:
-        _LOGGER.exception(str(e))
-        sys.exit(1)
+        _LOGGER.exception("OpenWeatherMap plugin failed to start. Details %s", str(e))
+        raise
 
 
 def plugin_reconfigure(handle, new_config):
-    # TODO: when appid, city, url, rate config value changed it should reconfigure and restart
-    pass
+    """ Reconfigures the plugin
+
+    it should be called when the configuration of the plugin is changed during the operation of the south service.
+    The new configuration category should be passed.
+
+    Args:
+        handle: handle returned by the plugin initialisation call
+        new_config: JSON object representing the new configuration category for the category
+    Returns:
+        new_handle: new handle to be used in the future calls
+    Raises:
+    """
+
+    _LOGGER.info("Old config for OpenWeatherMap plugin {} \n new config {}".format(handle, new_config))
+
+    diff = utils.get_diff(handle, new_config)
+
+    if 'appid' in diff or 'city' in diff or 'url' in diff or 'rate' in diff:
+        plugin_shutdown(handle)
+        new_handle = plugin_init(new_config)
+        new_handle['restart'] = 'yes'
+        _LOGGER.info("Restarting OpenWeatherMap plugin due to change in configuration keys [{}]".format(', '.join(diff)))
+    else:
+        new_handle = copy.deepcopy(new_config)
+        new_handle['restart'] = 'no'
+
+    return new_handle
 
 
 def plugin_shutdown(task):
     try:
-        _LOGGER.info('South openweathermap plugin shut down.')
-
+        _LOGGER.info('South openweathermap plugin shutting down.')
         task.stop()
     except Exception as e:
         _LOGGER.exception(str(e))
