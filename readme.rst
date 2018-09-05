@@ -15,6 +15,7 @@ The make_deb script
 ===================
 
 .. code-block:: console
+
     $ ./make_deb help
 
     make_deb help [clean|cleanall]
@@ -49,6 +50,7 @@ Finally, run the ``make_deb`` command:
 The result will be:
 
 .. code-block:: console
+
     $ ls -l packages/build/
     total 12
     drwxrwxr-x 4 foglamp foglamp 4096 Jun 20 15:19 foglamp-south-openweathermap-1.0.0
@@ -59,6 +61,7 @@ The result will be:
 If you execute the ``make_deb`` command again, you will see:
 
 .. code-block:: console
+
     $ ./make_deb
     The package root directory is               : /home/foglamp/Development/foglamp-south-openweathermap
     The FogLAMP south openweathermap version is : 1.0.0
@@ -82,6 +85,7 @@ If you execute the ``make_deb`` command again, you will see:
     -rw-r--r-- 1 foglamp foglamp 5570 Jun 20 15:21 foglamp-south-openweathermap-1.0.0.deb
     -rw-r--r-- 1 foglamp foglamp 5570 Jun 20 15:19 foglamp-south-openweathermap-1.0.0.deb.0001
     $
+
 
 ... where the previous build is now marked with the suffix *.0001*.
 
