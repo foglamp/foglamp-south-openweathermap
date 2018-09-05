@@ -180,6 +180,7 @@ class WeatherReport(object):
 
             data = json.loads(res)
             readings = {
+                'city': data['name'],
                 'wind_speed': data['wind']['speed'],
                 'clouds': data['clouds']['all'],
                 'temperature': data['main']['temp'],
