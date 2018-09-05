@@ -7,11 +7,9 @@
 """ Weather report from OpenWeatherMap async plugin """
 
 import copy
-import sys
 import asyncio
 import http.client
 import json
-from datetime import datetime, timezone
 import uuid
 import logging
 
@@ -44,24 +42,30 @@ _DEFAULT_CONFIG = {
         'default': 'api.openweathermap.org',
         'order': '1'
     },
-    'city': {
-        'description': 'City to obtain weather report for',
-        'type': 'string',
-        'default': 'London',
-        'order': '3'
-    },
     'appid': {
         'description': 'Application ID registered with OpenWeatherMap',
         'type': 'string',
         'default': 'bbafe18fb275ae5b200d094e36c574ff',
         'order': '2'
     },
+    'city': {
+        'description': 'City to obtain weather report for',
+        'type': 'string',
+        'default': 'London',
+        'order': '3'
+    },
+    'assetName': {
+        'description': 'Asset Name',
+        'type': 'string',
+        'default': 'OpenWeatherMap',
+        'order': '4'
+    },
     'rate': {
         'description': 'Rate at which to fetch weather report in seconds',
         'type': 'integer',
         'default': '10',
         'minimum': '5',
-        'order': '4'
+        'order': '5'
     }
 }
 
@@ -86,8 +90,9 @@ def plugin_init(config):
     city = config['city']['value']
     appid = config['appid']['value']
     rate = config['rate']['value']
+    asset_name = config['asset_name']['value']
 
-    return WeatherReport(url, city, appid, rate)
+    return WeatherReport(url, city, appid, rate, asset_name)
 
 
 def plugin_start(task):
@@ -116,7 +121,7 @@ def plugin_reconfigure(handle, new_config):
 
     diff = utils.get_diff(handle, new_config)
 
-    if 'appid' in diff or 'city' in diff or 'url' in diff or 'rate' in diff:
+    if 'appid' in diff or 'city' in diff or 'url' in diff or 'rate' in diff or 'asset_name' in diff:
         plugin_shutdown(handle)
         new_handle = plugin_init(new_config)
         new_handle['restart'] = 'yes'
@@ -130,7 +135,7 @@ def plugin_reconfigure(handle, new_config):
 
 def plugin_shutdown(task):
     try:
-        _LOGGER.info('South openweathermap plugin shutting down.')
+        _LOGGER.info('South OpenWeatherMap plugin shutting down.')
         task.stop()
     except Exception as e:
         _LOGGER.exception(str(e))
@@ -138,15 +143,16 @@ def plugin_shutdown(task):
 
 
 class WeatherReport(object):
-    """ Handle interation with OpenWeatherMap API """
+    """ Handle integration with OpenWeatherMap API """
 
-    def __init__(self, url, city, appid, rate):
+    def __init__(self, url, city, appid, rate, asset_name):
         self._interval = float(rate)
         self._loop = asyncio.get_event_loop()
         self.url = url
         self.city = city
         self.appid = appid
         self.rate = rate
+        self.asset_name = asset_name
 
     def _run(self):
         asyncio.ensure_future(self.fetch())
@@ -172,12 +178,12 @@ class WeatherReport(object):
                 message = {'busy': True}
                 raise web.HTTPServiceUnavailable(reason=message)
             else:
-                asset = 'OpenWeatherMap'
-                timestamp = str(datetime.now(tz=timezone.utc))
                 data = json.loads(res)
-                readings = {'wind_deg': data['wind']['deg'], 'wind_speed': data['wind']['speed'],
-                            'temperature': data['main']['temp'],
-                            'pressure': data['main']['pressure'],
-                            'visibility': data['visibility']}
-                key = str(uuid.uuid4())
-                await Ingest.add_readings(asset=asset, timestamp=timestamp, key=key, readings=readings)
+                readings = { 'wind_deg': data['wind']['deg'],
+                             'wind_speed': data['wind']['speed'],
+                             'temperature': data['main']['temp'],
+                             'pressure': data['main']['pressure'],
+                             'visibility': data['visibility']
+                             }
+                await Ingest.add_readings(asset=self.asset_name, timestamp=utils.local_timestamp(),
+                                          key=str(uuid.uuid4()), readings=readings)
