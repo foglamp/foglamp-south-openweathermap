@@ -90,7 +90,7 @@ def plugin_init(config):
     city = config['city']['value']
     appid = config['appid']['value']
     rate = config['rate']['value']
-    asset_name = config['asset_name']['value']
+    asset_name = config['assetName']['value']
 
     return WeatherReport(url, city, appid, rate, asset_name)
 
@@ -177,13 +177,16 @@ class WeatherReport(object):
             if not Ingest.is_available():
                 message = {'busy': True}
                 raise web.HTTPServiceUnavailable(reason=message)
-            else:
-                data = json.loads(res)
-                readings = { 'wind_deg': data['wind']['deg'],
-                             'wind_speed': data['wind']['speed'],
-                             'temperature': data['main']['temp'],
-                             'pressure': data['main']['pressure'],
-                             'visibility': data['visibility']
-                             }
-                await Ingest.add_readings(asset=self.asset_name, timestamp=utils.local_timestamp(),
-                                          key=str(uuid.uuid4()), readings=readings)
+
+            data = json.loads(res)
+            readings = {
+                'city': data['name'],
+                'wind_speed': data['wind']['speed'],
+                'clouds': data['clouds']['all'],
+                'temperature': data['main']['temp'],
+                'pressure': data['main']['pressure'],
+                'humidity': data['main']['humidity'],
+                'visibility': data['visibility']
+            }
+            await Ingest.add_readings(asset=self.asset_name, timestamp=utils.local_timestamp(),
+                                      key=str(uuid.uuid4()), readings=readings)
