@@ -180,13 +180,15 @@ class WeatherReport(object):
 
             data = json.loads(res)
             readings = {
-                'city': data['name'],
-                'wind_speed': data['wind']['speed'],
-                'clouds': data['clouds']['all'],
-                'temperature': data['main']['temp'],
-                'pressure': data['main']['pressure'],
-                'humidity': data['main']['humidity'],
-                'visibility': data['visibility']
+                'readings' : {
+                    'city': data['name'],
+                    'wind_speed': data['wind']['speed'],
+                    'clouds': data['clouds']['all'],
+                    'temperature': data['main']['temp'],
+                    'pressure': data['main']['pressure'],
+                    'humidity': data['main']['humidity'],
+                    'visibility': data['visibility']
+                }
             }
             await Ingest.add_readings(asset=self.asset_name, timestamp=utils.local_timestamp(),
                                       key=str(uuid.uuid4()), readings=readings)
