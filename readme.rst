@@ -2,7 +2,7 @@
 foglamp-south-openweathermap
 ============================
 
-South Plugin for openweathermap `read more <https://github.com/foglamp/foglamp-south-openweathermap/blob/master/python/foglamp/plugins/south/openweathermap/readme.rst>`_
+South Plugin for openweathermap `read more <python/foglamp/plugins/south/openweathermap/readme.rst>`_
 
 
 ****************************
