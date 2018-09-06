@@ -138,7 +138,7 @@ def plugin_reconfigure(handle, new_config):
 
     diff = utils.get_diff(handle, new_config)
 
-    if 'appid' in diff or 'city' in diff or 'url' in diff or 'rate' in diff or 'asset_name' in diff:
+    if 'appid' in diff or 'city' in diff or 'url' in diff or 'rate' in diff or 'assetName' in diff:
         plugin_shutdown(handle)
         new_handle = plugin_init(new_config)
         new_handle['restart'] = 'yes'
