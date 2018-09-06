@@ -7,16 +7,19 @@
 """ Weather report from OpenWeatherMap async plugin """
 
 import copy
-import sys
 import asyncio
 import http.client
 import json
-from datetime import datetime, timezone
 import uuid
+import logging
+
 from aiohttp import web
+
 from foglamp.common import logger
 from foglamp.plugins.common import utils
 from foglamp.services.south.ingest import Ingest
+from foglamp.services.south.exceptions import DataRetrievalError
+
 
 
 __author__ = "Mark Riddoch, Ashwin Gopalakrishnan"
@@ -24,46 +27,76 @@ __copyright__ = "Copyright (c) 2018 Dianomic Systems"
 __license__ = "Apache 2.0"
 __version__ = "${VERSION}"
 
-_LOGGER = logger.setup(__name__, level=20)
+_LOGGER = logger.setup(__name__, level=logging.INFO)
 
-_CONFIG_CATEGORY_NAME = 'openweathermap'
-_CONFIG_CATEGORY_DESCRIPTION = 'Weather Report from OpenWeatherMap'
+
 _DEFAULT_CONFIG = {
     'plugin': {
         'description': 'Weather Report from OpenWeatherMap',
         'type': 'string',
-        'default': 'openweathermap'
+        'default': 'openweathermap',
+        'readonly': 'true'
     },
     'url': {
-        'description': 'Port to listen on',
+        'description': 'API URL to fetch information',
         'type': 'string',
-        'default': 'api.openweathermap.org'
-    },
-    'city': {
-        'description': 'City to obtain weather report for',
-        'type': 'string',
-        'default': 'London'
+        'default': 'api.openweathermap.org',
+        'order': '1'
     },
     'appid': {
         'description': 'Application ID registered with OpenWeatherMap',
         'type': 'string',
-        'default': 'bbafe18fb275ae5b200d094e36c574ff'
+        'default': 'bbafe18fb275ae5b200d094e36c574ff',
+        'order': '2'
+    },
+    'city': {
+        'description': 'City to obtain weather report for',
+        'type': 'string',
+        'default': 'London',
+        'order': '3'
+    },
+    'assetName': {
+        'description': 'Asset Name',
+        'type': 'string',
+        'default': 'OpenWeatherMap',
+        'order': '4'
     },
     'rate': {
         'description': 'Rate at which to fetch weather report in seconds',
         'type': 'integer',
-        'default': '10'
+        'default': '10',
+        'minimum': '5',
+        'order': '5'
     }
 }
 
 
 def plugin_info():
-    return {'name': 'OpenWeatherMap plugin', 'version': '1.0', 'mode': 'async', 'type': 'south',
-            'interface': '1.0', 'config': _DEFAULT_CONFIG}
+    """ Returns information about the plugin.
+    Args:
+    Returns:
+        dict: plugin information
+    Raises:
+    """
+
+    return {
+        'name': 'OpenWeatherMap plugin',
+        'version': '1.0',
+        'mode': 'async',
+        'type': 'south',
+        'interface': '1.0',
+        'config': _DEFAULT_CONFIG
+    }
 
 
 def plugin_init(config):
-    """ Create the WeatherReport class that will periodically fetch weather data """
+    """ Initialise the plugin with WeatherReport class' object that will periodically fetch weather data
+       Args:
+           config: JSON configuration document for the South plugin configuration category
+       Returns:
+           data: JSON object to be used in future calls to the plugin
+       Raises:
+       """
 
     _LOGGER.info("Retrieve Weather Configuration %s", config)
 
@@ -71,28 +104,56 @@ def plugin_init(config):
     city = config['city']['value']
     appid = config['appid']['value']
     rate = config['rate']['value']
+    asset_name = config['assetName']['value']
 
-    return WeatherReport(url, city, appid, rate)
+    data = copy.deepcopy(config)
+    data['w_report'] = WeatherReport(url, city, appid, rate, asset_name)
+    return data
 
 
-def plugin_start(task):
+def plugin_start(handle):
     try:
+        task = handle['w_report']
         task.start()
-
     except Exception as e:
-        _LOGGER.exception(str(e))
-        sys.exit(1)
+        _LOGGER.exception("OpenWeatherMap plugin failed to start. Details %s", str(e))
+        raise
 
 
 def plugin_reconfigure(handle, new_config):
-    # TODO: when appid, city, url, rate config value changed it should reconfigure and restart
-    pass
+    """ Reconfigures the plugin
+
+    it should be called when the configuration of the plugin is changed during the operation of the south service.
+    The new configuration category should be passed.
+
+    Args:
+        handle: handle returned by the plugin initialisation call
+        new_config: JSON object representing the new configuration category for the category
+    Returns:
+        new_handle: new handle to be used in the future calls
+    Raises:
+    """
+
+    _LOGGER.info("Old config for OpenWeatherMap plugin {} \n new config {}".format(handle, new_config))
+
+    diff = utils.get_diff(handle, new_config)
+
+    if 'appid' in diff or 'city' in diff or 'url' in diff or 'rate' in diff or 'assetName' in diff:
+        plugin_shutdown(handle)
+        new_handle = plugin_init(new_config)
+        new_handle['restart'] = 'yes'
+        _LOGGER.info("Restarting OpenWeatherMap plugin due to change in configuration keys [{}]".format(', '.join(diff)))
+    else:
+        new_handle = copy.deepcopy(new_config)
+        new_handle['restart'] = 'no'
+
+    return new_handle
 
 
-def plugin_shutdown(task):
+def plugin_shutdown(handle):
     try:
-        _LOGGER.info('South openweathermap plugin shut down.')
-
+        _LOGGER.info('South OpenWeatherMap plugin shutting down.')
+        task = handle['w_report']
         task.stop()
     except Exception as e:
         _LOGGER.exception(str(e))
@@ -100,15 +161,18 @@ def plugin_shutdown(task):
 
 
 class WeatherReport(object):
-    """ Handle interation with OpenWeatherMap API """
+    """ Handle integration with OpenWeatherMap API """
 
-    def __init__(self, url, city, appid, rate):
+    __slots__ = ['_interval', '_loop', 'url', 'city', 'appid', 'asset_name', '_handler']
+
+    def __init__(self, url, city, appid, rate, asset_name):
         self._interval = float(rate)
         self._loop = asyncio.get_event_loop()
         self.url = url
         self.city = city
         self.appid = appid
-        self.rate = rate
+        self.asset_name = asset_name
+        self._handler = None
 
     def _run(self):
         asyncio.ensure_future(self.fetch())
@@ -133,13 +197,27 @@ class WeatherReport(object):
             if not Ingest.is_available():
                 message = {'busy': True}
                 raise web.HTTPServiceUnavailable(reason=message)
-            else:
-                asset = 'OpenWeatherMap'
-                timestamp = str(datetime.now(tz=timezone.utc))
-                data = json.loads(res)
-                readings = {'wind_deg': data['wind']['deg'], 'wind_speed': data['wind']['speed'],
-                            'temperature': data['main']['temp'],
-                            'pressure': data['main']['pressure'],
-                            'visibility': data['visibility']}
-                key = str(uuid.uuid4())
-                await Ingest.add_readings(asset=asset, timestamp=timestamp, key=key, readings=readings)
+
+            jdoc = json.loads(res)
+            reads = {
+                    'city': jdoc['name'],
+                    'wind_speed': jdoc['wind']['speed'],
+                    'clouds': jdoc['clouds']['all'],
+                    'temperature': jdoc['main']['temp'],
+                    'pressure': jdoc['main']['pressure'],
+                    'humidity': jdoc['main']['humidity'],
+                    'visibility': jdoc['visibility']
+            }
+            data = {
+                'asset': self.asset_name,
+                'timestamp': utils.local_timestamp(),
+                'key': str(uuid.uuid4()),
+                'readings': reads
+            }
+            await Ingest.add_readings(asset='{}'.format(data['asset']),
+                                      timestamp=data['timestamp'], key=data['key'],
+                                      readings=data['readings'])
+        else:
+            err = "Unable to fetch information from api.openweathermap"
+            _LOGGER.exception(err)
+            raise DataRetrievalError(err)
