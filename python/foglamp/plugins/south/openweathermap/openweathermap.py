@@ -18,6 +18,8 @@ from aiohttp import web
 from foglamp.common import logger
 from foglamp.plugins.common import utils
 from foglamp.services.south.ingest import Ingest
+from foglamp.services.south.exceptions import DataRetrievalError
+
 
 
 __author__ = "Mark Riddoch, Ashwin Gopalakrishnan"
@@ -27,8 +29,7 @@ __version__ = "${VERSION}"
 
 _LOGGER = logger.setup(__name__, level=logging.INFO)
 
-_CONFIG_CATEGORY_NAME = 'openweathermap'
-_CONFIG_CATEGORY_DESCRIPTION = 'Weather Report from OpenWeatherMap'
+
 _DEFAULT_CONFIG = {
     'plugin': {
         'description': 'Weather Report from OpenWeatherMap',
@@ -71,6 +72,13 @@ _DEFAULT_CONFIG = {
 
 
 def plugin_info():
+    """ Returns information about the plugin.
+    Args:
+    Returns:
+        dict: plugin information
+    Raises:
+    """
+
     return {
         'name': 'OpenWeatherMap plugin',
         'version': '1.0',
@@ -82,7 +90,13 @@ def plugin_info():
 
 
 def plugin_init(config):
-    """ Create the WeatherReport class that will periodically fetch weather data """
+    """ Initialise the plugin with WeatherReport class' object that will periodically fetch weather data
+       Args:
+           config: JSON configuration document for the South plugin configuration category
+       Returns:
+           data: JSON object to be used in future calls to the plugin
+       Raises:
+       """
 
     _LOGGER.info("Retrieve Weather Configuration %s", config)
 
@@ -92,11 +106,14 @@ def plugin_init(config):
     rate = config['rate']['value']
     asset_name = config['assetName']['value']
 
-    return WeatherReport(url, city, appid, rate, asset_name)
+    data = copy.deepcopy(config)
+    data['w_report'] = WeatherReport(url, city, appid, rate, asset_name)
+    return data
 
 
-def plugin_start(task):
+def plugin_start(handle):
     try:
+        task = handle['w_report']
         task.start()
     except Exception as e:
         _LOGGER.exception("OpenWeatherMap plugin failed to start. Details %s", str(e))
@@ -133,9 +150,10 @@ def plugin_reconfigure(handle, new_config):
     return new_handle
 
 
-def plugin_shutdown(task):
+def plugin_shutdown(handle):
     try:
         _LOGGER.info('South OpenWeatherMap plugin shutting down.')
+        task = handle['w_report']
         task.stop()
     except Exception as e:
         _LOGGER.exception(str(e))
@@ -197,3 +215,7 @@ class WeatherReport(object):
             await Ingest.add_readings(asset='{}'.format(data['asset']),
                                       timestamp=data['timestamp'], key=data['key'],
                                       readings=data['readings'])
+        else:
+            err = "Unable to fetch information from api.openweathermap"
+            _LOGGER.exception(err)
+            raise DataRetrievalError(err)
