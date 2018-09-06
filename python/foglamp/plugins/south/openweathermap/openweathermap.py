@@ -163,13 +163,14 @@ def plugin_shutdown(handle):
 class WeatherReport(object):
     """ Handle integration with OpenWeatherMap API """
 
+    __slots__ = ['_interval', '_loop', 'url', 'city', 'appid', 'asset_name']
+
     def __init__(self, url, city, appid, rate, asset_name):
         self._interval = float(rate)
         self._loop = asyncio.get_event_loop()
         self.url = url
         self.city = city
         self.appid = appid
-        self.rate = rate
         self.asset_name = asset_name
 
     def _run(self):
