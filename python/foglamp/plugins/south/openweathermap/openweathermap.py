@@ -41,32 +41,37 @@ _DEFAULT_CONFIG = {
         'description': 'API URL to fetch information',
         'type': 'string',
         'default': 'api.openweathermap.org',
-        'order': '1'
+        'order': '1',
+        'displayName': 'URL'
     },
     'appid': {
         'description': 'Application ID registered with OpenWeatherMap',
         'type': 'string',
         'default': 'bbafe18fb275ae5b200d094e36c574ff',
-        'order': '2'
+        'order': '2',
+        'displayName': 'App ID'
     },
     'city': {
         'description': 'City to obtain weather report for',
         'type': 'string',
         'default': 'London',
-        'order': '3'
+        'order': '3',
+        'displayName': 'City'
     },
     'assetName': {
         'description': 'Asset Name',
         'type': 'string',
         'default': 'OpenWeatherMap',
-        'order': '4'
+        'order': '4',
+        'displayName': 'Asset Name'
     },
     'rate': {
         'description': 'Rate at which to fetch weather report in seconds',
         'type': 'integer',
         'default': '10',
         'minimum': '5',
-        'order': '5'
+        'order': '5',
+        'displayName': 'Rate'
     }
 }
 
