@@ -42,14 +42,14 @@ _DEFAULT_CONFIG = {
         'type': 'string',
         'default': 'api.openweathermap.org',
         'order': '1',
-        'displayName': 'URL'
+        'displayName': 'API URL'
     },
     'appid': {
         'description': 'Application ID registered with OpenWeatherMap',
         'type': 'string',
         'default': 'bbafe18fb275ae5b200d094e36c574ff',
         'order': '2',
-        'displayName': 'App ID'
+        'displayName': 'Application ID'
     },
     'city': {
         'description': 'City to obtain weather report for',
@@ -71,7 +71,7 @@ _DEFAULT_CONFIG = {
         'default': '10',
         'minimum': '5',
         'order': '5',
-        'displayName': 'Rate'
+        'displayName': 'Request Interval'
     }
 }
 
