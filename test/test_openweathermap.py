@@ -29,7 +29,7 @@ def test_plugin_contract():
 def test_plugin_info():
     assert openweathermap.plugin_info() == {
         'name': 'OpenWeatherMap plugin',
-        'version': '1.0',
+        'version': '1.5.0',
         'mode': 'async',
         'type': 'south',
         'interface': '1.0',

@@ -86,7 +86,7 @@ def plugin_info():
 
     return {
         'name': 'OpenWeatherMap plugin',
-        'version': '1.0',
+        'version': '1.5.0',
         'mode': 'async',
         'type': 'south',
         'interface': '1.0',
