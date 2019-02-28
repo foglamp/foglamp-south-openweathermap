@@ -146,16 +146,10 @@ def plugin_reconfigure(handle, new_config):
     Raises:
     """
     _LOGGER.info("Old config for OpenWeatherMap plugin {} \n new config {}".format(handle, new_config))
-
-    # plugin_shutdown
     plugin_shutdown(handle)
-
-    # plugin_init
     new_handle = plugin_init(new_config)
-
-    # plugin_start
     plugin_start(new_handle)
-
+    return new_handle
 
 def plugin_shutdown(handle):
     try:
