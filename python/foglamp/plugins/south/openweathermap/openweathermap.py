@@ -70,6 +70,7 @@ _DEFAULT_CONFIG = {
     }
 }
 _LOGGER = logger.setup(__name__, level=logging.INFO)
+
 c_callback = None
 c_ingest_ref = None
 loop = None
@@ -109,8 +110,6 @@ def plugin_init(config):
 
 def plugin_start(handle):
     global loop, t, task
-    _LOGGER.info("plugin_start called")
-
     loop = asyncio.new_event_loop()
     try:
         url = handle['url']['value']
@@ -147,14 +146,10 @@ def plugin_reconfigure(handle, new_config):
     """
     _LOGGER.info("Old config for OpenWeatherMap plugin {} \n new config {}".format(handle, new_config))
 
-    # plugin_shutdown
     plugin_shutdown(handle)
-
-    # plugin_init
     new_handle = plugin_init(new_config)
-
-    # plugin_start
     plugin_start(new_handle)
+    return new_handle
 
 
 def plugin_shutdown(handle):
