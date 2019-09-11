@@ -1,5 +1,5 @@
 ============================
-foglamp-south-openweathermap
+fledge-south-openweathermap
 ============================
 
-South Plugin for openweathermap `read more <python/foglamp/plugins/south/openweathermap/readme.rst>`_
+South Plugin for openweathermap `read more <python/fledge/plugins/south/openweathermap/readme.rst>`_

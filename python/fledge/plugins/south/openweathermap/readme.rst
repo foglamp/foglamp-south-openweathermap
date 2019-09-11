@@ -1,5 +1,5 @@
 ****************************
-FogLAMP South OpenWeatherMap
+Fledge South OpenWeatherMap
 ****************************
 
 This directory contains a South service plugin that fetches weather report from

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# FOGLAMP_BEGIN
-# See: http://foglamp.readthedocs.io/
-# FOGLAMP_END
+# FLEDGE_BEGIN
+# See: http://fledge.readthedocs.io/
+# FLEDGE_END
 
 """ Weather report from OpenWeatherMap async plugin """
 
@@ -15,8 +15,8 @@ import logging
 from threading import Thread
 from aiohttp import web
 
-from foglamp.common import logger
-from foglamp.plugins.common import utils
+from fledge.common import logger
+from fledge.plugins.common import utils
 import async_ingest
 
 
