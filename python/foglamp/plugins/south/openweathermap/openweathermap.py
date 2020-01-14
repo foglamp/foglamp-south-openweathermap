@@ -10,7 +10,6 @@ import copy
 import asyncio
 import http.client
 import json
-import uuid
 import logging
 from threading import Thread
 from aiohttp import web
@@ -221,7 +220,6 @@ class WeatherReport(object):
             data = {
                 'asset': self.asset_name,
                 'timestamp': utils.local_timestamp(),
-                'key': str(uuid.uuid4()),
                 'readings': reads
             }
             async_ingest.ingest_callback(c_callback, c_ingest_ref, data)
